@@ -1,0 +1,875 @@
+Bx where error occurred : 73
+CLCT0 data = 0xd7789
+CLCT1 data = 0xd0000
+
+----------------------
+CLCT0 data = 0xd7789
+----------------------
+CLCT0.Valid      = 0x1
+CLCT0.Nhits      = 0x4
+CLCT0.pattern    = 0x8
+CLCT0.Key HStrip = 119
+CLCT0.BXN        = 0x1
+CLCT0.sync err   = 0x1
+
+----------------------
+CLCT1 data = 0xd0000
+----------------------
+CLCT1.Valid      = 0x0
+CLCT1.Nhits      = 0x0
+CLCT1.pattern    = 0x0
+CLCT1.Key HStrip = 0
+CLCT1.BXN        = 0x1
+CLCT1.sync err   = 0x1
+Bx where error occurred : 328
+CLCT0 data = 0xc7789
+CLCT1 data = 0xc0000
+
+----------------------
+CLCT0 data = 0xc7789
+----------------------
+CLCT0.Valid      = 0x1
+CLCT0.Nhits      = 0x4
+CLCT0.pattern    = 0x8
+CLCT0.Key HStrip = 119
+CLCT0.BXN        = 0x0
+CLCT0.sync err   = 0x1
+
+----------------------
+CLCT1 data = 0xc0000
+----------------------
+CLCT1.Valid      = 0x0
+CLCT1.Nhits      = 0x0
+CLCT1.pattern    = 0x0
+CLCT1.Key HStrip = 0
+CLCT1.BXN        = 0x0
+CLCT1.sync err   = 0x1
+Bx where error occurred : 445
+CLCT0 data = 0xc77a9
+CLCT1 data = 0xc0000
+
+----------------------
+CLCT0 data = 0xc77a9
+----------------------
+CLCT0.Valid      = 0x1
+CLCT0.Nhits      = 0x4
+CLCT0.pattern    = 0xa
+CLCT0.Key HStrip = 119
+CLCT0.BXN        = 0x0
+CLCT0.sync err   = 0x1
+
+----------------------
+CLCT1 data = 0xc0000
+----------------------
+CLCT1.Valid      = 0x0
+CLCT1.Nhits      = 0x0
+CLCT1.pattern    = 0x0
+CLCT1.Key HStrip = 0
+CLCT1.BXN        = 0x0
+CLCT1.sync err   = 0x1
+Bx where error occurred : 1004
+CLCT0 data = 0xd7789
+CLCT1 data = 0xd0000
+
+----------------------
+CLCT0 data = 0xd7789
+----------------------
+CLCT0.Valid      = 0x1
+CLCT0.Nhits      = 0x4
+CLCT0.pattern    = 0x8
+CLCT0.Key HStrip = 119
+CLCT0.BXN        = 0x1
+CLCT0.sync err   = 0x1
+
+----------------------
+CLCT1 data = 0xd0000
+----------------------
+CLCT1.Valid      = 0x0
+CLCT1.Nhits      = 0x0
+CLCT1.pattern    = 0x0
+CLCT1.Key HStrip = 0
+CLCT1.BXN        = 0x1
+CLCT1.sync err   = 0x1
+Bx where error occurred : 1139
+CLCT0 data = 0xc77a9
+CLCT1 data = 0xc0000
+
+----------------------
+CLCT0 data = 0xc77a9
+----------------------
+CLCT0.Valid      = 0x1
+CLCT0.Nhits      = 0x4
+CLCT0.pattern    = 0xa
+CLCT0.Key HStrip = 119
+CLCT0.BXN        = 0x0
+CLCT0.sync err   = 0x1
+
+----------------------
+CLCT1 data = 0xc0000
+----------------------
+CLCT1.Valid      = 0x0
+CLCT1.Nhits      = 0x0
+CLCT1.pattern    = 0x0
+CLCT1.Key HStrip = 0
+CLCT1.BXN        = 0x0
+CLCT1.sync err   = 0x1
+Bx where error occurred : 1334
+CLCT0 data = 0xe77a9
+CLCT1 data = 0xe0000
+
+----------------------
+CLCT0 data = 0xe77a9
+----------------------
+CLCT0.Valid      = 0x1
+CLCT0.Nhits      = 0x4
+CLCT0.pattern    = 0xa
+CLCT0.Key HStrip = 119
+CLCT0.BXN        = 0x2
+CLCT0.sync err   = 0x1
+
+----------------------
+CLCT1 data = 0xe0000
+----------------------
+CLCT1.Valid      = 0x0
+CLCT1.Nhits      = 0x0
+CLCT1.pattern    = 0x0
+CLCT1.Key HStrip = 0
+CLCT1.BXN        = 0x2
+CLCT1.sync err   = 0x1
+Bx where error occurred : 2476
+CLCT0 data = 0xc77a9
+CLCT1 data = 0xc0000
+
+----------------------
+CLCT0 data = 0xc77a9
+----------------------
+CLCT0.Valid      = 0x1
+CLCT0.Nhits      = 0x4
+CLCT0.pattern    = 0xa
+CLCT0.Key HStrip = 119
+CLCT0.BXN        = 0x0
+CLCT0.sync err   = 0x1
+
+----------------------
+CLCT1 data = 0xc0000
+----------------------
+CLCT1.Valid      = 0x0
+CLCT1.Nhits      = 0x0
+CLCT1.pattern    = 0x0
+CLCT1.Key HStrip = 0
+CLCT1.BXN        = 0x0
+CLCT1.sync err   = 0x1
+Bx where error occurred : 2616
+CLCT0 data = 0xe7789
+CLCT1 data = 0xe0000
+
+----------------------
+CLCT0 data = 0xe7789
+----------------------
+CLCT0.Valid      = 0x1
+CLCT0.Nhits      = 0x4
+CLCT0.pattern    = 0x8
+CLCT0.Key HStrip = 119
+CLCT0.BXN        = 0x2
+CLCT0.sync err   = 0x1
+
+----------------------
+CLCT1 data = 0xe0000
+----------------------
+CLCT1.Valid      = 0x0
+CLCT1.Nhits      = 0x0
+CLCT1.pattern    = 0x0
+CLCT1.Key HStrip = 0
+CLCT1.BXN        = 0x2
+CLCT1.sync err   = 0x1
+Bx where error occurred : 2666
+CLCT0 data = 0xe77a9
+CLCT1 data = 0xe0000
+
+----------------------
+CLCT0 data = 0xe77a9
+----------------------
+CLCT0.Valid      = 0x1
+CLCT0.Nhits      = 0x4
+CLCT0.pattern    = 0xa
+CLCT0.Key HStrip = 119
+CLCT0.BXN        = 0x2
+CLCT0.sync err   = 0x1
+
+----------------------
+CLCT1 data = 0xe0000
+----------------------
+CLCT1.Valid      = 0x0
+CLCT1.Nhits      = 0x0
+CLCT1.pattern    = 0x0
+CLCT1.Key HStrip = 0
+CLCT1.BXN        = 0x2
+CLCT1.sync err   = 0x1
+Bx where error occurred : 3349
+CLCT0 data = 0xf7789
+CLCT1 data = 0xf0000
+
+----------------------
+CLCT0 data = 0xf7789
+----------------------
+CLCT0.Valid      = 0x1
+CLCT0.Nhits      = 0x4
+CLCT0.pattern    = 0x8
+CLCT0.Key HStrip = 119
+CLCT0.BXN        = 0x3
+CLCT0.sync err   = 0x1
+
+----------------------
+CLCT1 data = 0xf0000
+----------------------
+CLCT1.Valid      = 0x0
+CLCT1.Nhits      = 0x0
+CLCT1.pattern    = 0x0
+CLCT1.Key HStrip = 0
+CLCT1.BXN        = 0x3
+CLCT1.sync err   = 0x1
+Bx where error occurred : 3544
+CLCT0 data = 0xc77a9
+CLCT1 data = 0xc0000
+
+----------------------
+CLCT0 data = 0xc77a9
+----------------------
+CLCT0.Valid      = 0x1
+CLCT0.Nhits      = 0x4
+CLCT0.pattern    = 0xa
+CLCT0.Key HStrip = 119
+CLCT0.BXN        = 0x0
+CLCT0.sync err   = 0x1
+
+----------------------
+CLCT1 data = 0xc0000
+----------------------
+CLCT1.Valid      = 0x0
+CLCT1.Nhits      = 0x0
+CLCT1.pattern    = 0x0
+CLCT1.Key HStrip = 0
+CLCT1.BXN        = 0x0
+CLCT1.sync err   = 0x1
+Bx where error occurred : 3688
+CLCT0 data = 0xf7789
+CLCT1 data = 0xf0000
+
+----------------------
+CLCT0 data = 0xf7789
+----------------------
+CLCT0.Valid      = 0x1
+CLCT0.Nhits      = 0x4
+CLCT0.pattern    = 0x8
+CLCT0.Key HStrip = 119
+CLCT0.BXN        = 0x3
+CLCT0.sync err   = 0x1
+
+----------------------
+CLCT1 data = 0xf0000
+----------------------
+CLCT1.Valid      = 0x0
+CLCT1.Nhits      = 0x0
+CLCT1.pattern    = 0x0
+CLCT1.Key HStrip = 0
+CLCT1.BXN        = 0x3
+CLCT1.sync err   = 0x1
+Bx where error occurred : 4048
+CLCT0 data = 0xf77a9
+CLCT1 data = 0xf0000
+
+----------------------
+CLCT0 data = 0xf77a9
+----------------------
+CLCT0.Valid      = 0x1
+CLCT0.Nhits      = 0x4
+CLCT0.pattern    = 0xa
+CLCT0.Key HStrip = 119
+CLCT0.BXN        = 0x3
+CLCT0.sync err   = 0x1
+
+----------------------
+CLCT1 data = 0xf0000
+----------------------
+CLCT1.Valid      = 0x0
+CLCT1.Nhits      = 0x0
+CLCT1.pattern    = 0x0
+CLCT1.Key HStrip = 0
+CLCT1.BXN        = 0x3
+CLCT1.sync err   = 0x1
+Bx where error occurred : 4193
+CLCT0 data = 0xf77a9
+CLCT1 data = 0xf0000
+
+----------------------
+CLCT0 data = 0xf77a9
+----------------------
+CLCT0.Valid      = 0x1
+CLCT0.Nhits      = 0x4
+CLCT0.pattern    = 0xa
+CLCT0.Key HStrip = 119
+CLCT0.BXN        = 0x3
+CLCT0.sync err   = 0x1
+
+----------------------
+CLCT1 data = 0xf0000
+----------------------
+CLCT1.Valid      = 0x0
+CLCT1.Nhits      = 0x0
+CLCT1.pattern    = 0x0
+CLCT1.Key HStrip = 0
+CLCT1.BXN        = 0x3
+CLCT1.sync err   = 0x1
+Bx where error occurred : 4313
+CLCT0 data = 0xe7789
+CLCT1 data = 0xe0000
+
+----------------------
+CLCT0 data = 0xe7789
+----------------------
+CLCT0.Valid      = 0x1
+CLCT0.Nhits      = 0x4
+CLCT0.pattern    = 0x8
+CLCT0.Key HStrip = 119
+CLCT0.BXN        = 0x2
+CLCT0.sync err   = 0x1
+
+----------------------
+CLCT1 data = 0xe0000
+----------------------
+CLCT1.Valid      = 0x0
+CLCT1.Nhits      = 0x0
+CLCT1.pattern    = 0x0
+CLCT1.Key HStrip = 0
+CLCT1.BXN        = 0x2
+CLCT1.sync err   = 0x1
+Bx where error occurred : 4351
+CLCT0 data = 0xe77a9
+CLCT1 data = 0xe0000
+
+----------------------
+CLCT0 data = 0xe77a9
+----------------------
+CLCT0.Valid      = 0x1
+CLCT0.Nhits      = 0x4
+CLCT0.pattern    = 0xa
+CLCT0.Key HStrip = 119
+CLCT0.BXN        = 0x2
+CLCT0.sync err   = 0x1
+
+----------------------
+CLCT1 data = 0xe0000
+----------------------
+CLCT1.Valid      = 0x0
+CLCT1.Nhits      = 0x0
+CLCT1.pattern    = 0x0
+CLCT1.Key HStrip = 0
+CLCT1.BXN        = 0x2
+CLCT1.sync err   = 0x1
+Bx where error occurred : 4579
+CLCT0 data = 0xc77a9
+CLCT1 data = 0xc0000
+
+----------------------
+CLCT0 data = 0xc77a9
+----------------------
+CLCT0.Valid      = 0x1
+CLCT0.Nhits      = 0x4
+CLCT0.pattern    = 0xa
+CLCT0.Key HStrip = 119
+CLCT0.BXN        = 0x0
+CLCT0.sync err   = 0x1
+
+----------------------
+CLCT1 data = 0xc0000
+----------------------
+CLCT1.Valid      = 0x0
+CLCT1.Nhits      = 0x0
+CLCT1.pattern    = 0x0
+CLCT1.Key HStrip = 0
+CLCT1.BXN        = 0x0
+CLCT1.sync err   = 0x1
+Bx where error occurred : 4614
+CLCT0 data = 0xd77a9
+CLCT1 data = 0xd0000
+
+----------------------
+CLCT0 data = 0xd77a9
+----------------------
+CLCT0.Valid      = 0x1
+CLCT0.Nhits      = 0x4
+CLCT0.pattern    = 0xa
+CLCT0.Key HStrip = 119
+CLCT0.BXN        = 0x1
+CLCT0.sync err   = 0x1
+
+----------------------
+CLCT1 data = 0xd0000
+----------------------
+CLCT1.Valid      = 0x0
+CLCT1.Nhits      = 0x0
+CLCT1.pattern    = 0x0
+CLCT1.Key HStrip = 0
+CLCT1.BXN        = 0x1
+CLCT1.sync err   = 0x1
+Bx where error occurred : 4694
+CLCT0 data = 0xe77a9
+CLCT1 data = 0xe0000
+
+----------------------
+CLCT0 data = 0xe77a9
+----------------------
+CLCT0.Valid      = 0x1
+CLCT0.Nhits      = 0x4
+CLCT0.pattern    = 0xa
+CLCT0.Key HStrip = 119
+CLCT0.BXN        = 0x2
+CLCT0.sync err   = 0x1
+
+----------------------
+CLCT1 data = 0xe0000
+----------------------
+CLCT1.Valid      = 0x0
+CLCT1.Nhits      = 0x0
+CLCT1.pattern    = 0x0
+CLCT1.Key HStrip = 0
+CLCT1.BXN        = 0x2
+CLCT1.sync err   = 0x1
+Bx where error occurred : 5430
+CLCT0 data = 0xc77a9
+CLCT1 data = 0xc0000
+
+----------------------
+CLCT0 data = 0xc77a9
+----------------------
+CLCT0.Valid      = 0x1
+CLCT0.Nhits      = 0x4
+CLCT0.pattern    = 0xa
+CLCT0.Key HStrip = 119
+CLCT0.BXN        = 0x0
+CLCT0.sync err   = 0x1
+
+----------------------
+CLCT1 data = 0xc0000
+----------------------
+CLCT1.Valid      = 0x0
+CLCT1.Nhits      = 0x0
+CLCT1.pattern    = 0x0
+CLCT1.Key HStrip = 0
+CLCT1.BXN        = 0x0
+CLCT1.sync err   = 0x1
+Bx where error occurred : 5521
+CLCT0 data = 0xc77a9
+CLCT1 data = 0xc0000
+
+----------------------
+CLCT0 data = 0xc77a9
+----------------------
+CLCT0.Valid      = 0x1
+CLCT0.Nhits      = 0x4
+CLCT0.pattern    = 0xa
+CLCT0.Key HStrip = 119
+CLCT0.BXN        = 0x0
+CLCT0.sync err   = 0x1
+
+----------------------
+CLCT1 data = 0xc0000
+----------------------
+CLCT1.Valid      = 0x0
+CLCT1.Nhits      = 0x0
+CLCT1.pattern    = 0x0
+CLCT1.Key HStrip = 0
+CLCT1.BXN        = 0x0
+CLCT1.sync err   = 0x1
+Bx where error occurred : 5725
+CLCT0 data = 0xd77a9
+CLCT1 data = 0xd0000
+
+----------------------
+CLCT0 data = 0xd77a9
+----------------------
+CLCT0.Valid      = 0x1
+CLCT0.Nhits      = 0x4
+CLCT0.pattern    = 0xa
+CLCT0.Key HStrip = 119
+CLCT0.BXN        = 0x1
+CLCT0.sync err   = 0x1
+
+----------------------
+CLCT1 data = 0xd0000
+----------------------
+CLCT1.Valid      = 0x0
+CLCT1.Nhits      = 0x0
+CLCT1.pattern    = 0x0
+CLCT1.Key HStrip = 0
+CLCT1.BXN        = 0x1
+CLCT1.sync err   = 0x1
+Bx where error occurred : 5933
+CLCT0 data = 0xf77a9
+CLCT1 data = 0xf0000
+
+----------------------
+CLCT0 data = 0xf77a9
+----------------------
+CLCT0.Valid      = 0x1
+CLCT0.Nhits      = 0x4
+CLCT0.pattern    = 0xa
+CLCT0.Key HStrip = 119
+CLCT0.BXN        = 0x3
+CLCT0.sync err   = 0x1
+
+----------------------
+CLCT1 data = 0xf0000
+----------------------
+CLCT1.Valid      = 0x0
+CLCT1.Nhits      = 0x0
+CLCT1.pattern    = 0x0
+CLCT1.Key HStrip = 0
+CLCT1.BXN        = 0x3
+CLCT1.sync err   = 0x1
+Bx where error occurred : 6204
+CLCT0 data = 0xd77a9
+CLCT1 data = 0xd0000
+
+----------------------
+CLCT0 data = 0xd77a9
+----------------------
+CLCT0.Valid      = 0x1
+CLCT0.Nhits      = 0x4
+CLCT0.pattern    = 0xa
+CLCT0.Key HStrip = 119
+CLCT0.BXN        = 0x1
+CLCT0.sync err   = 0x1
+
+----------------------
+CLCT1 data = 0xd0000
+----------------------
+CLCT1.Valid      = 0x0
+CLCT1.Nhits      = 0x0
+CLCT1.pattern    = 0x0
+CLCT1.Key HStrip = 0
+CLCT1.BXN        = 0x1
+CLCT1.sync err   = 0x1
+Bx where error occurred : 6595
+CLCT0 data = 0xe77a9
+CLCT1 data = 0xe0000
+
+----------------------
+CLCT0 data = 0xe77a9
+----------------------
+CLCT0.Valid      = 0x1
+CLCT0.Nhits      = 0x4
+CLCT0.pattern    = 0xa
+CLCT0.Key HStrip = 119
+CLCT0.BXN        = 0x2
+CLCT0.sync err   = 0x1
+
+----------------------
+CLCT1 data = 0xe0000
+----------------------
+CLCT1.Valid      = 0x0
+CLCT1.Nhits      = 0x0
+CLCT1.pattern    = 0x0
+CLCT1.Key HStrip = 0
+CLCT1.BXN        = 0x2
+CLCT1.sync err   = 0x1
+Bx where error occurred : 6603
+CLCT0 data = 0xf7789
+CLCT1 data = 0xf0000
+
+----------------------
+CLCT0 data = 0xf7789
+----------------------
+CLCT0.Valid      = 0x1
+CLCT0.Nhits      = 0x4
+CLCT0.pattern    = 0x8
+CLCT0.Key HStrip = 119
+CLCT0.BXN        = 0x3
+CLCT0.sync err   = 0x1
+
+----------------------
+CLCT1 data = 0xf0000
+----------------------
+CLCT1.Valid      = 0x0
+CLCT1.Nhits      = 0x0
+CLCT1.pattern    = 0x0
+CLCT1.Key HStrip = 0
+CLCT1.BXN        = 0x3
+CLCT1.sync err   = 0x1
+Bx where error occurred : 7332
+CLCT0 data = 0xf77a9
+CLCT1 data = 0xf0000
+
+----------------------
+CLCT0 data = 0xf77a9
+----------------------
+CLCT0.Valid      = 0x1
+CLCT0.Nhits      = 0x4
+CLCT0.pattern    = 0xa
+CLCT0.Key HStrip = 119
+CLCT0.BXN        = 0x3
+CLCT0.sync err   = 0x1
+
+----------------------
+CLCT1 data = 0xf0000
+----------------------
+CLCT1.Valid      = 0x0
+CLCT1.Nhits      = 0x0
+CLCT1.pattern    = 0x0
+CLCT1.Key HStrip = 0
+CLCT1.BXN        = 0x3
+CLCT1.sync err   = 0x1
+Bx where error occurred : 8135
+CLCT0 data = 0xc77a9
+CLCT1 data = 0xc0000
+
+----------------------
+CLCT0 data = 0xc77a9
+----------------------
+CLCT0.Valid      = 0x1
+CLCT0.Nhits      = 0x4
+CLCT0.pattern    = 0xa
+CLCT0.Key HStrip = 119
+CLCT0.BXN        = 0x0
+CLCT0.sync err   = 0x1
+
+----------------------
+CLCT1 data = 0xc0000
+----------------------
+CLCT1.Valid      = 0x0
+CLCT1.Nhits      = 0x0
+CLCT1.pattern    = 0x0
+CLCT1.Key HStrip = 0
+CLCT1.BXN        = 0x0
+CLCT1.sync err   = 0x1
+Bx where error occurred : 8153
+CLCT0 data = 0xd77a9
+CLCT1 data = 0xd0000
+
+----------------------
+CLCT0 data = 0xd77a9
+----------------------
+CLCT0.Valid      = 0x1
+CLCT0.Nhits      = 0x4
+CLCT0.pattern    = 0xa
+CLCT0.Key HStrip = 119
+CLCT0.BXN        = 0x1
+CLCT0.sync err   = 0x1
+
+----------------------
+CLCT1 data = 0xd0000
+----------------------
+CLCT1.Valid      = 0x0
+CLCT1.Nhits      = 0x0
+CLCT1.pattern    = 0x0
+CLCT1.Key HStrip = 0
+CLCT1.BXN        = 0x1
+CLCT1.sync err   = 0x1
+Bx where error occurred : 8566
+CLCT0 data = 0xc77a9
+CLCT1 data = 0xc0000
+
+----------------------
+CLCT0 data = 0xc77a9
+----------------------
+CLCT0.Valid      = 0x1
+CLCT0.Nhits      = 0x4
+CLCT0.pattern    = 0xa
+CLCT0.Key HStrip = 119
+CLCT0.BXN        = 0x0
+CLCT0.sync err   = 0x1
+
+----------------------
+CLCT1 data = 0xc0000
+----------------------
+CLCT1.Valid      = 0x0
+CLCT1.Nhits      = 0x0
+CLCT1.pattern    = 0x0
+CLCT1.Key HStrip = 0
+CLCT1.BXN        = 0x0
+CLCT1.sync err   = 0x1
+Bx where error occurred : 8568
+CLCT0 data = 0xe7789
+CLCT1 data = 0xe0000
+
+----------------------
+CLCT0 data = 0xe7789
+----------------------
+CLCT0.Valid      = 0x1
+CLCT0.Nhits      = 0x4
+CLCT0.pattern    = 0x8
+CLCT0.Key HStrip = 119
+CLCT0.BXN        = 0x2
+CLCT0.sync err   = 0x1
+
+----------------------
+CLCT1 data = 0xe0000
+----------------------
+CLCT1.Valid      = 0x0
+CLCT1.Nhits      = 0x0
+CLCT1.pattern    = 0x0
+CLCT1.Key HStrip = 0
+CLCT1.BXN        = 0x2
+CLCT1.sync err   = 0x1
+Bx where error occurred : 8835
+CLCT0 data = 0xe77a9
+CLCT1 data = 0xe0000
+
+----------------------
+CLCT0 data = 0xe77a9
+----------------------
+CLCT0.Valid      = 0x1
+CLCT0.Nhits      = 0x4
+CLCT0.pattern    = 0xa
+CLCT0.Key HStrip = 119
+CLCT0.BXN        = 0x2
+CLCT0.sync err   = 0x1
+
+----------------------
+CLCT1 data = 0xe0000
+----------------------
+CLCT1.Valid      = 0x0
+CLCT1.Nhits      = 0x0
+CLCT1.pattern    = 0x0
+CLCT1.Key HStrip = 0
+CLCT1.BXN        = 0x2
+CLCT1.sync err   = 0x1
+Bx where error occurred : 9030
+CLCT0 data = 0xd77a9
+CLCT1 data = 0xd0000
+
+----------------------
+CLCT0 data = 0xd77a9
+----------------------
+CLCT0.Valid      = 0x1
+CLCT0.Nhits      = 0x4
+CLCT0.pattern    = 0xa
+CLCT0.Key HStrip = 119
+CLCT0.BXN        = 0x1
+CLCT0.sync err   = 0x1
+
+----------------------
+CLCT1 data = 0xd0000
+----------------------
+CLCT1.Valid      = 0x0
+CLCT1.Nhits      = 0x0
+CLCT1.pattern    = 0x0
+CLCT1.Key HStrip = 0
+CLCT1.BXN        = 0x1
+CLCT1.sync err   = 0x1
+Bx where error occurred : 9253
+CLCT0 data = 0xf77a9
+CLCT1 data = 0xf0000
+
+----------------------
+CLCT0 data = 0xf77a9
+----------------------
+CLCT0.Valid      = 0x1
+CLCT0.Nhits      = 0x4
+CLCT0.pattern    = 0xa
+CLCT0.Key HStrip = 119
+CLCT0.BXN        = 0x3
+CLCT0.sync err   = 0x1
+
+----------------------
+CLCT1 data = 0xf0000
+----------------------
+CLCT1.Valid      = 0x0
+CLCT1.Nhits      = 0x0
+CLCT1.pattern    = 0x0
+CLCT1.Key HStrip = 0
+CLCT1.BXN        = 0x3
+CLCT1.sync err   = 0x1
+Bx where error occurred : 9339
+CLCT0 data = 0xf7789
+CLCT1 data = 0xf0000
+
+----------------------
+CLCT0 data = 0xf7789
+----------------------
+CLCT0.Valid      = 0x1
+CLCT0.Nhits      = 0x4
+CLCT0.pattern    = 0x8
+CLCT0.Key HStrip = 119
+CLCT0.BXN        = 0x3
+CLCT0.sync err   = 0x1
+
+----------------------
+CLCT1 data = 0xf0000
+----------------------
+CLCT1.Valid      = 0x0
+CLCT1.Nhits      = 0x0
+CLCT1.pattern    = 0x0
+CLCT1.Key HStrip = 0
+CLCT1.BXN        = 0x3
+CLCT1.sync err   = 0x1
+Bx where error occurred : 9367
+CLCT0 data = 0xf77a9
+CLCT1 data = 0xf0000
+
+----------------------
+CLCT0 data = 0xf77a9
+----------------------
+CLCT0.Valid      = 0x1
+CLCT0.Nhits      = 0x4
+CLCT0.pattern    = 0xa
+CLCT0.Key HStrip = 119
+CLCT0.BXN        = 0x3
+CLCT0.sync err   = 0x1
+
+----------------------
+CLCT1 data = 0xf0000
+----------------------
+CLCT1.Valid      = 0x0
+CLCT1.Nhits      = 0x0
+CLCT1.pattern    = 0x0
+CLCT1.Key HStrip = 0
+CLCT1.BXN        = 0x3
+CLCT1.sync err   = 0x1
+Bx where error occurred : 9627
+CLCT0 data = 0xc77a9
+CLCT1 data = 0xc0000
+
+----------------------
+CLCT0 data = 0xc77a9
+----------------------
+CLCT0.Valid      = 0x1
+CLCT0.Nhits      = 0x4
+CLCT0.pattern    = 0xa
+CLCT0.Key HStrip = 119
+CLCT0.BXN        = 0x0
+CLCT0.sync err   = 0x1
+
+----------------------
+CLCT1 data = 0xc0000
+----------------------
+CLCT1.Valid      = 0x0
+CLCT1.Nhits      = 0x0
+CLCT1.pattern    = 0x0
+CLCT1.Key HStrip = 0
+CLCT1.BXN        = 0x0
+CLCT1.sync err   = 0x1
+Bx where error occurred : 9744
+CLCT0 data = 0xd77a9
+CLCT1 data = 0xd0000
+
+----------------------
+CLCT0 data = 0xd77a9
+----------------------
+CLCT0.Valid      = 0x1
+CLCT0.Nhits      = 0x4
+CLCT0.pattern    = 0xa
+CLCT0.Key HStrip = 119
+CLCT0.BXN        = 0x1
+CLCT0.sync err   = 0x1
+
+----------------------
+CLCT1 data = 0xd0000
+----------------------
+CLCT1.Valid      = 0x0
+CLCT1.Nhits      = 0x0
+CLCT1.pattern    = 0x0
+CLCT1.Key HStrip = 0
+CLCT1.BXN        = 0x1
+CLCT1.sync err   = 0x1
+There were 38 errors from the CLCT's out of 10000 runs.

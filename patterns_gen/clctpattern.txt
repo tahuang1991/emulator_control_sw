@@ -1,0 +1,3 @@
+prefix:TEST_oneDCFEB
+bx keystrip pattern nhits
+6    20       3      4
