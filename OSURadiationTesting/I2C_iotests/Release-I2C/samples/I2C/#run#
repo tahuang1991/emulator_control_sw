@@ -1,0 +1,21 @@
+#!/bin/bash
+rmmod ftdi_sio
+rmmod usbserial
+
+export LD_LIBRARY_PATH=/home/radtestboard/I2C/Release-I2C/samples/I2C:/usr/local:/usr/local/lib
+ echo $LD_LIBRARY_PATH
+#  STR=getconf LONG_BIT
+  STR=63
+  if [ $STR -eq 64 ]; then
+    ARCH=x86_64
+  else
+# default is 32bit
+    ARCH=i386
+  fi
+  echo "------------------------------------------------"
+  echo "in function getArch"
+  echo STR = $STR
+  echo ARCH = $ARCH
+  echo "------------------------------------------------"
+gcc -g -ldl -I. -o junk sample-static.c libMPSSE.
+./run2

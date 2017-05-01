@@ -1,0 +1,2 @@
+ # Digilent HS2
+    SUBSYSTEM=="usb", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6014", MODE="0664", GROUP="plugdev"

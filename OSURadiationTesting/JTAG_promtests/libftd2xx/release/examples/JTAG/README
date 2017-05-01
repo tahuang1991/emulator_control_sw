@@ -1,0 +1,20 @@
+
+
+It seems to be true that the mini-module and the 2232H usb devices
+are incompatable. The following works:
+
+For JTAG and the mini-module 232H:
+
+1) On reboot /etc/udev/rules.d/99-ftdi.rules should be there
+
+2) May require su then:
+insmod /lib/modules/2.6.32-642.15.1.el6.i686/kernel/drivers/usb/serial/usbserial.ko
+insmod /lib/modules/2.6.32-642.15.1.el6.i686/kernel/drivers/usb/serial/ftdi_sio.ko
+
+
+
+For GPBIO and I2C devices 2232H:
+
+1) rename /etc/udev/rules.d/99-ftdi.rules to /etc/udev/rules.d/99-xxxftdi.rules
+2) reboot
+3) 'lsmod | grep ftdi'  and if it exists rmmod ftdi

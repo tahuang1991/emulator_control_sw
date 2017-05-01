@@ -1,0 +1,86 @@
+There are two test routines that need to be run each time you check the boards.
+One uses JTAG and the other uses I2C to perform different tests.
+
+1) JTAG: This routine tests writing, erasing, and reading the EEPROM portion
+and the I/O portion of the DS4550 devices.
+There are 4 of these devices on each board.
+The JTAG chain order is device 1 first, device 4 last.
+
+2) I2C_tests:  This routine writes patterns on the I/O of the DS4550's
+and reads the values back through analog switches.
+There are 3 different switch types on the boards,
+(2) SN74CBTLV3257PWR's, (1) SN74CBTLV3125PWR, (1) MAX4889AETO.
+ 
+The JTAG communications is done through the HS2 adapter which plugs into
+the 14-pin 2mm connector.
+The I2C communications is done through the FT2232H-56Q Mini Module.
+
+---------------------------
+
+First Time Setup
+
+if you are running 32bit linux
+1) cd libraries_32bit 
+2) sudo copy libftd2xx.* /usr/local/lib/.
+
+if you are running 64bit linux
+1) cd libraries_64bit 
+2) sudo cp libftd2xx.* /usr/local/lib/.
+3) copy libftd2xx.* into  JTAG_promtests/libftd2xx/release/examples/JTAG/.
+4) copy libftd2xx.* into  I2C_iotests/Release-I2C/samples/I2C/.
+
+compiling libMPSSE (both 32bit and 64bit linux)
+1) cd I2C_iotests/LibMPSSE-I2C/LibMPSSE/Build/Linux
+2) make clean; make;
+3) sudo cp libMPSSE.* /usr/local/lib/.
+4) copy libMPSSE.* into  JTAG_promtests/libftd2xx/release/examples/JTAG/.
+5) copy libMPSSE.* into  I2C_iotests/Release-I2C/samples/I2C/.
+
+
+-----------------------------
+
+to compile JTAG routines
+
+1) cd  JTAG_promtests/libftd2xx/release/examples/JTAG
+2) make clean
+3) make
+
+to run JTAG routines
+jtag_run =  JTAG_promtests/libftd2xx/release/examples/JTAG/
+sudo copy WinTypes.h and ftd2xx.h to /usr/local/include
+1) cd jtag_run
+2) ./JTAG
+3) file is output to jtag_board_data in this directory
+
+JTAG may require ftdi driver  is running
+
+1) lsmod | grep ftdi_sio
+2) if not there load the drivers:
+sudo insmod /lib/modules/2.6.32-642.15.1.el6.i686/kernel/drivers/usb/serial/usbserial.ko
+sudo insmod /lib/modules/2.6.32-642.15.1.el6.i686/kernel/drivers/usb/serial/ftdi_sio.ko
+
+TAMU comment here: better to use  sudo /sbin/modprobe ftdi_sio
+
+------------------------------
+
+to compile I2C routines
+i2c_run = /home/cscdev/OSURadiationTest/OSURadiationTesting/I2C_iotests/Release-I2C/samples
+1) cd i2c_run
+2)./bash.b
+3) choose 1 
+
+
+to run I2C routines
+
+1) cd i2c_run
+2) cd I2C
+3) sudo ./I2C_tests
+
+for I2C driver 
+
+I2C will require ftdi driver not to be there. This happens
+everytime you power down or unplug any of the cables.
+
+1) lsmod | grep ftdi_sio
+2) if there:
+   sudo rmmod ftdi_sio

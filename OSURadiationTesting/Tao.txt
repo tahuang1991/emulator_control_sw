@@ -1,0 +1,24 @@
+I guess i2c_run is referred to OSURadiationTesting/I2C_iotests/Release-I2C/samples
+When I excuted b.bash sent attached in your mail, I still saw this following message:
+------------------------------------------------
+in function getArch
+STR = 64
+ARCH = x86_64
+------------------------------------------------
+----------------------------------------
+Please select the sample application to build and run
+1. I2C-Static
+2. I2C-Dynamic
+3. SPI-Static
+4. SPI-Dynamic
+5. Test all
+1
+cp: cannot stat `../../lib/linjx/x86_64/*': No such file or directory
+------------------------------------------------
+Building sample by linking to static library and running it
+I2C_tests.c: In function ‘main’:
+I2C_tests.c:257: error: ‘port_a_chan’ undeclared (first use in this function)
+I2C_tests.c:257: error: (Each undeclared identifier is reported only once
+I2C_tests.c:257: error: for each function it appears in.)
+I2C_tests.c:258: error: ‘port_b_chan’ undeclared (first use in this function)
+

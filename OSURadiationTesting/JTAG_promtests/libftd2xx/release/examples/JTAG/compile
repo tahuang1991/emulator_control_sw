@@ -1,0 +1,1 @@
+ g++ -lm -lusb -o junk exampleJTAG.cpp stdafx.cpp libftd2xx.a
