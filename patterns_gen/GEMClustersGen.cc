@@ -17,8 +17,9 @@
 struct GEMPad{
     unsigned int bx;
     unsigned int pad;
-    unsigned int etapartition;
-    unsigned int size;
+    unsigned int etapartition;//0-7
+    unsigned int globalpad; //0-1535
+    unsigned int size;//0-7
 
 };
 
@@ -63,12 +64,13 @@ int main(int argc, char * argv[]) {
     //while(!text_file.eof()){
     while(text_file>>bx>>pad>>etapartition>>size){
         //text_file>>bx>>pad>>etapartition>>size;
-        std::cout << "bx " << bx <<" GEM pad " << pad << "  etapartition " << etapartition <<" size "<< size << std::endl;     
         input_pads.push_back(GEMPad());
         input_pads[n].bx = bx;
         input_pads[n].pad = pad;
         input_pads[n].etapartition = etapartition;
+        input_pads[n].globalpad = pad + etapartition*192;
         input_pads[n].size = size;
+        std::cout << "bx " << bx <<" GEM pad " << pad << "  etapartition " << etapartition <<" size "<< size <<" globalpad "<< pad+192*etapartition<< std::endl;     
         //std::cout <<"text_file " << text_file << std::endl;
 
         n++; 
@@ -93,7 +95,7 @@ int main(int argc, char * argv[]) {
     for (unsigned int i = 0; i < input_pads.size() ; i++){
         //std::cout  <<"i " << i << " bx " << input_pads[i].bx<<" size "<< (std::bitset<3>)input_pads[i].size << "  etapartition " << (std::bitset<3>)input_pads[i].etapartition <<" GEM pad " << (std::bitset<8>)input_pads[i].pad << std::endl;     
 
-        std::cout  <<"i " << i << " bx " << input_pads[i].bx<<" clusterbits "<< (std::bitset<3>)input_pads[i].size << (std::bitset<3>)input_pads[i].etapartition << (std::bitset<8>)input_pads[i].pad << std::endl;     
+        std::cout  <<"i " << i << " bx " << input_pads[i].bx<<" clusterbits "<< (std::bitset<3>)input_pads[i].size <<  (std::bitset<11>)input_pads[i].globalpad << std::endl;     
         if (lastbx < input_pads[i].bx ){
             if (icluster>0 and icluster<4){
                 x = std::pow(2, 8-remainbits) -1;
@@ -101,7 +103,8 @@ int main(int argc, char * argv[]) {
             }
             std::cout <<" lastbx " << lastbx <<" input_pads bx " << input_pads[i].bx <<" remain n  "<< remainbits << " bits " << (std::bitset<8>)(remaininfo << (8-remainbits)) << std::endl;
             writenbytes(oss, 7-icluster*14/8);
-            writenbytes(oss, 1, 0);
+            //writenbytes(oss, 1, 0);//???? why 0 here
+            writenbytes(oss, 1, 255);//???? why 0 here
             writenbxs(oss, input_pads[i].bx-1-lastbx);
             lastbx = input_pads[i].bx;
             icluster = 0;
@@ -112,7 +115,7 @@ int main(int argc, char * argv[]) {
             if (icluster >= 4) {
                 continue;
             }
-            unsigned int info = ((input_pads[i].etapartition << 8) | input_pads[i].pad);
+            unsigned int info = input_pads[i].globalpad;
             info = (info | input_pads[i].size << 11);//valid info should be 14 bits
             switch(icluster) {
                 case 0: remainbits = 6;
