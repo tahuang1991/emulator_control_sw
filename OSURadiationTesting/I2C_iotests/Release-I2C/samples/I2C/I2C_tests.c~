@@ -1,0 +1,323 @@
+/*!
+ * \file sample-static.c
+ *
+ * \author FTDI
+ * \date 20110512
+ *
+ * Copyright © 2011 Future Technology Devices International Limited
+ * Company Confidential
+ *
+ * Project: libMPSSE
+ * Module: I2C Sample Application - Interfacing 24LC024H I2C EEPROM
+ *
+ * Rivision History:
+ * 0.1 - 20110513 - initial version
+ * 0.2 - 20110801 - Changed LatencyTimer to 255
+ * 				  Attempt to open channel only if available
+ *				  Added & modified macros
+ *                		  Change I2C_GetChannelInfo & OpenChannel to start indexing from 0
+ * 0.3 - 20111212 - Added comments
+ */
+
+/******************************************************************************/
+/* 							 Include files										   */
+/******************************************************************************/
+/* Standard C libraries */
+#include<stdio.h>
+#include<stdlib.h>
+/* OS specific libraries */
+#ifdef _WIN32
+#include<windows.h>
+#endif
+
+/* Include D2XX header*/
+#include "ftd2xx.h"
+
+/* Include libMPSSE header */
+#include "libMPSSE_i2c.h"
+
+/******************************************************************************/
+/*								Macro and type defines							   */
+/******************************************************************************/
+/* Helper macros */
+
+#define APP_CHECK_STATUS(exp) {if(exp!=FT_OK){printf("%s:%d:%s(): status(0x%x) \
+!= FT_OK\n",__FILE__, __LINE__, __FUNCTION__,exp);exit(1);}else{;}};
+#define CHECK_NULL(exp){if(exp==NULL){printf("%s:%d:%s():  NULL expression \
+encountered \n",__FILE__, __LINE__, __FUNCTION__);exit(1);}else{;}};
+
+/* Application specific macro definations */
+#define I2C_DEVICE_ADDRESS_EEPROM		0x57
+#define I2C_DEVICE_BUFFER_SIZE		256
+#define I2C_WRITE_COMPLETION_RETRY		10
+#define START_ADDRESS_EEPROM 	0x00 /*read/write start address inside the EEPROM*/
+#define END_ADDRESS_EEPROM		0x10
+
+
+#define RETRY_COUNT_EEPROM		10	/* number of retries if read/write fails */
+#define CHANNEL_TO_OPEN			0	/*0 for first available channel, 1 for next... */
+#define DATA_OFFSET				1
+
+char * timeheader();
+
+/******************************************************************************/
+/*								Global variables							  	    */
+/******************************************************************************/
+uint32 channels;
+FT_HANDLE ftHandle, ftHandle0, ftHandle1,ftHandle2;
+uint32 bytes_written;
+ChannelConfig channelConf;
+FT_STATUS status;
+uint8 buffer[I2C_DEVICE_BUFFER_SIZE];
+
+time_t curt_;
+struct tm *loct_;
+char thistime[150];
+char boardnum[100];
+
+
+
+/******************************************************************************/
+/*						Public function definitions						  		   */
+/******************************************************************************/
+
+/*!
+ * \brief Writes to I/O of DS4550
+ *
+ * This function writes a 9-bit pattern to four DS4550 Non-Volatile I/O expanders
+ *
+ * \param[in] pattern  The unsigned 16 bit word with the 9-bit pattern
+ * \return Returns status code of type FT_STATUS(see D2XX Programmer's Guide)
+  * \note 
+ * \warning
+ */
+
+FT_STATUS write_IO_devs(uint16 pattern)
+{
+	FT_STATUS status;
+	uint8 dev_address;
+	uint8 data;
+	uint8 bit8;
+        uint32 wrt_options;
+	uint32 nbytes = 0;
+	uint32 bTrans;
+	int i;
+
+	data = pattern & 0xFF;
+	bit8 = (pattern>>8) & 0x01;
+	wrt_options = I2C_TRANSFER_OPTIONS_FAST_TRANSFER_BYTES|I2C_TRANSFER_OPTIONS_START_BIT|I2C_TRANSFER_OPTIONS_STOP_BIT;
+	for(i=1;i<5;i++){
+	  dev_address = 0x50|i;
+	  printf("writing to device %02x\n",dev_address);
+	  nbytes=0;
+	  bTrans=0;
+	  buffer[nbytes++]=0xF4; //Configuration register
+	  buffer[nbytes++]=0x01; //disable writing to flash -- shadow memory only
+	  status = I2C_DeviceWrite(ftHandle0, dev_address, nbytes, buffer, &bTrans, wrt_options);
+	  printf("enable pullups and write data\n");
+	  nbytes=0;
+	  bTrans=0;
+	  buffer[nbytes++]=0xF0; //Pullup enable 0
+	  buffer[nbytes++]=0xFF; //enable pullups on I/O[7..0]
+	  //		  buffer[nbytes++]=0xF1; //Pullup enable 1
+	  buffer[nbytes++]=0x01; //enable pullups on I/O[8]
+	  //		  buffer[nbytes++]=0xF2; //I/O Control 0
+	  buffer[nbytes++]=data; //Data to I/O[7..0]
+	  //		  buffer[nbytes++]=0xF3; //I/O Control 1
+	  buffer[nbytes++]=bit8; //Data to I/O[8]
+	  status = I2C_DeviceWrite(ftHandle0, dev_address, nbytes, buffer, &bTrans, wrt_options);
+	  if(status != FT_OK)printf("error: status = %d\n",status);
+	}
+	return status;
+}
+
+/*!
+ * \brief Reads data on Switches
+ *
+ * This function reads the data passing through the switch devices
+ *
+ * \param[out] pbuf  Buffer to store the 9-bit patterns on the four I/O devices
+ * \return Returns status code of type FT_STATUS(see D2XX Programmer's Guide)
+  * \note 
+ * \warning
+ */
+
+FT_STATUS read_switches(uint16 *pbuf)
+{
+	FT_STATUS status;
+	uint8 dev1io,dev2io,dev3io,dev4io,bit8s;
+	int i;
+
+
+	printf("write output enable and select dev 1 and 2\n");
+	status = FT_WriteLowByteGPIO(ftHandle0,0xFB,0x00); //Port A Low Byte  Write output enable and select dev 1 & 2
+	if(status != FT_OK)printf("error: status = %d\n",status);
+	status = FT_WriteGPIO(ftHandle0,0x00,0x00);        //Port A High Byte Set directions to inputs
+	if(status != FT_OK)printf("error: status = %d\n",status);
+	printf("set directions of GPIO to inputs\n");
+	status = FT_WriteLowByteGPIO(ftHandle1,0x00,0x00); //Port B Low Byte  Set directions to inputs
+	if(status != FT_OK)printf("error: status = %d\n",status);
+	status = FT_WriteGPIO(ftHandle1,0x00,0x00);        //Port B High Byte Set directions to inputs
+	if(status != FT_OK)printf("error: status = %d\n",status);
+
+	printf("read dev 1 and 2\n");
+	status = FT_ReadGPIO(ftHandle0,&dev1io);        //Read Port A High Byte
+	if(status != FT_OK)printf("error: status = %d\n",status);
+	status = FT_ReadGPIO(ftHandle1,&dev2io);        //Read Port B High Byte
+	if(status != FT_OK)printf("error: status = %d\n",status);
+	status = FT_ReadLowByteGPIO(ftHandle1,&bit8s); //Read Port B Low Byte  
+	if(status != FT_OK)printf("error: status = %d\n",status);
+
+	printf("write output enable and select dev 3 and 4\n");
+	status = FT_WriteLowByteGPIO(ftHandle0,0xFB,0x70); //Port A Low Byte  Write output enable and select dev 3 & 4
+	if(status != FT_OK)printf("error: status = %d\n",status);
+
+	printf("read dev 3 and 4\n");
+	status = FT_ReadGPIO(ftHandle0,&dev3io);        //Read Port A High Byte
+	if(status != FT_OK)printf("error: status = %d\n",status);
+	status = FT_ReadGPIO(ftHandle1,&dev4io);        //Read Port B High Byte
+	if(status != FT_OK)printf("error: status = %d\n",status);
+	status = FT_ReadLowByteGPIO(ftHandle1,&bit8s); //Read Port B Low Byte  
+	if(status != FT_OK)printf("error: status = %d\n",status);
+
+	pbuf[0] = (bit8s<<4)&0x100 | dev1io&0xff;
+	pbuf[1] = (bit8s<<3)&0x100 | dev2io&0xff;
+	pbuf[2] = (bit8s<<2)&0x100 | dev3io&0xff;
+	pbuf[3] = (bit8s<<1)&0x100 | dev4io&0xff;
+
+	return status;
+}
+
+/*!
+ * \brief Main function / Entry point to the sample application
+ *
+ * This function is the entry point to the sample application. It opens the channel, writes to the
+ * EEPROM and reads back.
+ *
+ * \param[in] none
+ * \return Returns 0 for success
+ * \sa
+ * \note 
+ * \warning
+ */
+int main(int argc, char *argv[]){
+	FT_STATUS status;
+	FT_DEVICE_LIST_INFO_NODE devList;
+	uint8 dev_address;
+        uint16 pattern[] = { 0x000, 0x1FF, 0x0AA, 0x155, 0x111, 0x022, 0x044, 0x088 };
+	uint16 pat_buf[4];
+        uint32 wrt_options,rd_options;
+	uint32 nbytes = 0;
+	uint32 bTrans;
+	int i,j;
+        FILE *Dataout;
+        char dout[100];
+        char dout2[100];
+
+        if(argc!=2){
+          printf(" Error: usage ./I2C_tests 1  where 1 is the board number\n");
+          return 1;
+        }  
+        *boardnum=*argv[1];
+        printf(" board number %s \n",boardnum);
+        sprintf(dout2,"***board %s ***%s",boardnum,timeheader());
+        sprintf(dout,"i2c_board_data/i2crun_brd%s_%s.dat",boardnum,timeheader());
+        printf(" %s \n",dout);
+        Dataout=fopen(dout,"w");
+        fprintf(Dataout,"%s \n",dout2); 
+
+#ifdef _MSC_VER
+	Init_libMPSSE();
+#endif
+	channelConf.ClockRate = I2C_CLOCK_FAST_MODE;/*i.e. 400000 KHz*/
+	channelConf.LatencyTimer= 255;
+
+	//channelConf.Options = I2C_DISABLE_3PHASE_CLOCKING;
+	//channelConf.Options = I2C_ENABLE_DRIVE_ONLY_ZERO;
+
+	status = I2C_GetNumChannels(&channels);
+	APP_CHECK_STATUS(status);
+	printf("Number of available I2C channels = %d\n",channels);
+	
+	if(channels>0)
+	  {
+
+	    for(i=0;i<channels;i++)
+	      {
+		status = I2C_GetChannelInfo(i,&devList);
+		APP_CHECK_STATUS(status);
+		printf("Information on channel number %d:\n",i);
+		/*print the dev info*/
+		printf("		Flags=0x%x\n",devList.Flags); 
+		printf("		Type=0x%x\n",devList.Type); 
+		printf("		ID=0x%x\n",devList.ID); 
+		printf("		LocId=0x%x\n",devList.LocId); 
+		printf("		SerialNumber=%s\n",devList.SerialNumber); 
+		printf("		Description=%s\n",devList.Description); 
+	      }
+
+
+	    /* Open the first available channel */
+	    status = I2C_OpenChannel(0,&ftHandle0);
+	    APP_CHECK_STATUS(status);
+	    printf("\nhandle0=0x%x status=%d\n",ftHandle0,status);
+            fprintf(Dataout,"\nhandle0=0x%x status=%d\n",ftHandle0,status);
+
+	    /* Open the next available channel */
+	    status = I2C_OpenChannel(1,&ftHandle1);
+	    APP_CHECK_STATUS(status);
+	    printf("\nhandle1=0x%x status=%d\n",ftHandle1,status);
+            fprintf(Dataout,"\nhandle1=0x%x status=%d\n",ftHandle1,status);
+
+	    /* Open the next available channel */
+	    //status = I2C_OpenChannel(2,&ftHandle1);
+	    //APP_CHECK_STATUS(status);
+
+	    status = I2C_InitChannel(ftHandle0,&channelConf);
+	    APP_CHECK_STATUS(status);	
+	    status = I2C_InitChannel(ftHandle1,&channelConf);
+	    APP_CHECK_STATUS(status);
+
+	    for(i=0;i<8;i++){
+	      /*
+	       * Write Patterns to I/O devices
+	       */
+	      status = write_IO_devs(pattern[i]);
+	      if(status != FT_OK)printf("error: status = %d\n",status);
+              if(status != FT_OK)fprintf(Dataout,"error: status = %d\n",status);
+
+	      /*
+	       * Read Patterns back through switches
+	       */
+	      status = read_switches(pat_buf);
+	      if(status != FT_OK)printf("error: status = %d\n",status);
+              if(status != FT_OK)fprintf(Dataout,"error: status = %d\n",status);
+
+	      printf("dev    expected   readback   errors\n");
+              printf("------------------------------------\n");
+	      fprintf(Dataout,"dev    expected   readback   errors\n");
+              fprintf(Dataout,"------------------------------------\n");
+	      for(j=0;j<4;j++){
+		printf("%d)       %03x        %03x       %03x\n",j,pattern[i],pat_buf[j]&0x1FF,(pattern[i]^pat_buf[j])&0x1FF);
+		fprintf(Dataout,"%d)       %03x        %03x       %03x\n",j,pattern[i],pat_buf[j]&0x1FF,(pattern[i]^pat_buf[j])&0x1FF);
+	      }
+	    }
+
+	    status = I2C_CloseChannel(ftHandle0);
+	    status = I2C_CloseChannel(ftHandle1);
+	  }
+
+	
+#ifdef _MSC_VER
+	Cleanup_libMPSSE();
+#endif
+        fclose(Dataout);
+	return 0;
+}
+
+char * timeheader(){
+  curt_=time(NULL);
+  loct_=localtime(&curt_);
+  sprintf(thistime,"M%02dD%02dY%04dH%02d:%02d",loct_->tm_mon+1,loct_->tm_mday,loct_->tm_year+1900,loct_->tm_hour,loct_->tm_min);
+  return thistime;
+}

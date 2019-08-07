@@ -1,0 +1,32 @@
+***board 3 ***M04D28Y2017H08:56**************** Chip Number 1 ************
+**** MAX id_code rbk: 01000143
+ ****User EEPROM rbk 0xCD  Expect 0xCD 
+ ****User EEPROM rbk 0xAB  Expect 0xAB 
+ ****outputs io0-7 0x55 expect 0x55 
+ ****outputs io8 0x00 expect 0x00 
+ **** outputs io0-7 0x99 expect 0x99 
+ ****outputs io8 0x01 expect 0x01 
+***board 3 ***M04D28Y2017H08:56**************** Chip Number 2 ************
+**** MAX id_code rbk: 01000143
+ ****User EEPROM rbk 0xCD  Expect 0xCD 
+ ****User EEPROM rbk 0xAB  Expect 0xAB 
+ ****outputs io0-7 0x55 expect 0x55 
+ ****outputs io8 0x00 expect 0x00 
+ **** outputs io0-7 0x99 expect 0x99 
+ ****outputs io8 0x01 expect 0x01 
+***board 3 ***M04D28Y2017H08:56**************** Chip Number 3 ************
+**** MAX id_code rbk: 01000143
+ ****User EEPROM rbk 0xCD  Expect 0xCD 
+ ****User EEPROM rbk 0xAB  Expect 0xAB 
+ ****outputs io0-7 0x55 expect 0x55 
+ ****outputs io8 0x00 expect 0x00 
+ **** outputs io0-7 0x99 expect 0x99 
+ ****outputs io8 0x01 expect 0x01 
+***board 3 ***M04D28Y2017H08:56**************** Chip Number 4 ************
+**** MAX id_code rbk: 01000143
+ ****User EEPROM rbk 0xCD  Expect 0xCD 
+ ****User EEPROM rbk 0xAB  Expect 0xAB 
+ ****outputs io0-7 0x54 expect 0x55  ****** Bad
+ ****outputs io8 0x00 expect 0x00 
+ **** outputs io0-7 0x98 expect 0x99  ****** Bad
+ ****outputs io8 0x01 expect 0x01 

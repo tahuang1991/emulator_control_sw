@@ -1,0 +1,1006 @@
+../../Infra/src/ftdi_infra.c:432:my_init():Entering function
+../../Infra/src/ftdi_infra.c:247:Init_libMPSSE():Entering function
+ loading libftd2xx.so linux
+../../Infra/src/ftdi_infra.c:316:Init_libMPSSE():Exiting function status=0
+../../Infra/src/ftdi_infra.c:434:my_init():Exiting function status=0
+../../TopLayer/I2C/src/ftdi_i2c.c:161:I2C_GetNumChannels():Entering function
+../../MiddleLayer/src/ftdi_mid.c:94:FT_GetNumChannels():Entering function
+../../MiddleLayer/src/ftdi_mid.c:110:FT_GetNumChannels():INFRA_MALLOC 200bytes
+../../MiddleLayer/src/ftdi_mid.c:645:Mid_CheckMPSSEAvailable():Entering function
+../../MiddleLayer/src/ftdi_mid.c:675:Mid_CheckMPSSEAvailable():Exiting function status=0
+../../MiddleLayer/src/ftdi_mid.c:645:Mid_CheckMPSSEAvailable():Entering function
+../../MiddleLayer/src/ftdi_mid.c:675:Mid_CheckMPSSEAvailable():Exiting function status=0
+../../MiddleLayer/src/ftdi_mid.c:130:FT_GetNumChannels():INFRA_FREE 0x9351a78
+../../MiddleLayer/src/ftdi_mid.c:143:FT_GetNumChannels():Exiting function status=0
+../../TopLayer/I2C/src/ftdi_i2c.c:167:I2C_GetNumChannels():Exiting function status=0
+Number of available I2C channels = 2
+../../TopLayer/I2C/src/ftdi_i2c.c:190:I2C_GetChannelInfo():Entering function
+../../MiddleLayer/src/ftdi_mid.c:174:FT_GetChannelInfo():Entering function
+../../MiddleLayer/src/ftdi_mid.c:189:FT_GetChannelInfo():INFRA_MALLOC 200bytes
+../../MiddleLayer/src/ftdi_mid.c:645:Mid_CheckMPSSEAvailable():Entering function
+../../MiddleLayer/src/ftdi_mid.c:675:Mid_CheckMPSSEAvailable():Exiting function status=0
+../../MiddleLayer/src/ftdi_mid.c:211:FT_GetChannelInfo():INFRA_MEMCPY dest:0xbf970ffc src:0xbf970f18 size:0x64
+../../MiddleLayer/src/ftdi_mid.c:216:FT_GetChannelInfo():INFRA_FREE 0x9351870
+../../MiddleLayer/src/ftdi_mid.c:223:FT_GetChannelInfo():Exiting function status=0
+../../TopLayer/I2C/src/ftdi_i2c.c:196:I2C_GetChannelInfo():Exiting function status=0
+Information on channel number 0:
+		Flags=0x2
+		Type=0x6
+		ID=0x4036010
+		LocId=0x1051
+		SerialNumber=FT0T7KNBA
+		Description=FT2232H-56Q MiniModule A
+		ftHandle=0x0
+../../TopLayer/I2C/src/ftdi_i2c.c:190:I2C_GetChannelInfo():Entering function
+../../MiddleLayer/src/ftdi_mid.c:174:FT_GetChannelInfo():Entering function
+../../MiddleLayer/src/ftdi_mid.c:189:FT_GetChannelInfo():INFRA_MALLOC 200bytes
+../../MiddleLayer/src/ftdi_mid.c:645:Mid_CheckMPSSEAvailable():Entering function
+../../MiddleLayer/src/ftdi_mid.c:675:Mid_CheckMPSSEAvailable():Exiting function status=0
+../../MiddleLayer/src/ftdi_mid.c:645:Mid_CheckMPSSEAvailable():Entering function
+../../MiddleLayer/src/ftdi_mid.c:675:Mid_CheckMPSSEAvailable():Exiting function status=0
+../../MiddleLayer/src/ftdi_mid.c:211:FT_GetChannelInfo():INFRA_MEMCPY dest:0xbf970ffc src:0xbf970f18 size:0x64
+../../MiddleLayer/src/ftdi_mid.c:216:FT_GetChannelInfo():INFRA_FREE 0x9351a70
+../../MiddleLayer/src/ftdi_mid.c:223:FT_GetChannelInfo():Exiting function status=0
+../../TopLayer/I2C/src/ftdi_i2c.c:196:I2C_GetChannelInfo():Exiting function status=0
+Information on channel number 1:
+		Flags=0x2
+		Type=0x6
+		ID=0x4036010
+		LocId=0x1052
+		SerialNumber=FT0T7KNBB
+		Description=FT2232H-56Q MiniModule B
+		ftHandle=0x0
+../../TopLayer/I2C/src/ftdi_i2c.c:216:I2C_OpenChannel():Entering function
+../../MiddleLayer/src/ftdi_mid.c:253:FT_OpenChannel():Entering function
+../../MiddleLayer/src/ftdi_mid.c:268:FT_OpenChannel():INFRA_MALLOC 200bytes
+../../MiddleLayer/src/ftdi_mid.c:645:Mid_CheckMPSSEAvailable():Entering function
+../../MiddleLayer/src/ftdi_mid.c:675:Mid_CheckMPSSEAvailable():Exiting function status=0
+../../MiddleLayer/src/ftdi_mid.c:297:FT_OpenChannel():INFRA_FREE 0x9351870
+../../MiddleLayer/src/ftdi_mid.c:304:FT_OpenChannel():Exiting function status=0
+../../TopLayer/I2C/src/ftdi_i2c.c:221:I2C_OpenChannel():index=0 handle=154472432
+../../TopLayer/I2C/src/ftdi_i2c.c:223:I2C_OpenChannel():Exiting function status=0
+
+handle0=0x9350ff0 status=0
+../../TopLayer/I2C/src/ftdi_i2c.c:245:I2C_InitChannel():Entering function
+../../TopLayer/I2C/src/ftdi_i2c.c:256:I2C_InitChannel():handle=0x9350ff0 ClockRate=600000 LatencyTimer=255 Options=0x0
+../../MiddleLayer/src/ftdi_mid.c:339:FT_InitChannel():Entering function
+../../MiddleLayer/src/ftdi_mid.c:1051:Mid_GetFtDeviceType():Entering function
+../../MiddleLayer/src/ftdi_mid.c:1074:Mid_GetFtDeviceType():Detected device is a FT2232H chip
+../../MiddleLayer/src/ftdi_mid.c:1090:Mid_GetFtDeviceType():Exiting function status=0
+../../MiddleLayer/src/ftdi_mid.c:694:Mid_ResetDevice():Entering function
+../../MiddleLayer/src/ftdi_mid.c:696:Mid_ResetDevice():Exiting function status=0
+../../MiddleLayer/src/ftdi_mid.c:714:Mid_PurgeDevice():Entering function
+../../MiddleLayer/src/ftdi_mid.c:716:Mid_PurgeDevice():Exiting function status=0
+../../MiddleLayer/src/ftdi_mid.c:738:Mid_SetUSBParameters():Entering function
+../../MiddleLayer/src/ftdi_mid.c:741:Mid_SetUSBParameters():Exiting function status=0
+../../MiddleLayer/src/ftdi_mid.c:763:Mid_SetDeviceSpecialChar():Entering function
+../../MiddleLayer/src/ftdi_mid.c:766:Mid_SetDeviceSpecialChar():Exiting function status=0
+../../MiddleLayer/src/ftdi_mid.c:788:Mid_SetDeviceTimeOut():Entering function
+../../MiddleLayer/src/ftdi_mid.c:790:Mid_SetDeviceTimeOut():Exiting function status=0
+../../MiddleLayer/src/ftdi_mid.c:809:Mid_SetLatencyTimer():Entering function
+../../MiddleLayer/src/ftdi_mid.c:811:Mid_SetLatencyTimer():Exiting function status=0
+../../MiddleLayer/src/ftdi_mid.c:828:Mid_ResetMPSSE():Entering function
+../../MiddleLayer/src/ftdi_mid.c:831:Mid_ResetMPSSE():Exiting function status=0
+../../MiddleLayer/src/ftdi_mid.c:848:Mid_EnableMPSSEIn():Entering function
+../../MiddleLayer/src/ftdi_mid.c:851:Mid_EnableMPSSEIn():Exiting function status=0
+../../MiddleLayer/src/ftdi_mid.c:1181:Mid_SetDeviceLoopbackState():Entering function
+../../MiddleLayer/src/ftdi_mid.c:1191:Mid_SetDeviceLoopbackState():Exiting function status=0
+../../MiddleLayer/src/ftdi_mid.c:872:Mid_SyncMPSSE():Entering function
+../../MiddleLayer/src/ftdi_mid.c:1213:Mid_EmptyDeviceInputBuff():Entering function
+../../MiddleLayer/src/ftdi_mid.c:1214:Mid_EmptyDeviceInputBuff():INFRA_MALLOC 4096bytes
+../../MiddleLayer/src/ftdi_mid.c:1243:Mid_EmptyDeviceInputBuff():INFRA_FREE 0x93520a8
+../../MiddleLayer/src/ftdi_mid.c:1245:Mid_EmptyDeviceInputBuff():Exiting function status=0
+../../MiddleLayer/src/ftdi_mid.c:928:Mid_SendReceiveCmdFromMPSSE():Entering function
+../../MiddleLayer/src/ftdi_mid.c:929:Mid_SendReceiveCmdFromMPSSE():INFRA_MALLOC 4096bytes
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 0 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 1 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 2 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 3 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 4 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 5 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 6 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 7 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 8 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 9 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 10 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 11 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 12 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 13 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 14 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 15 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 16 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 17 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 18 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 19 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 20 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 21 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 22 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 23 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 24 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 25 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 26 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 27 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 28 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 29 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 30 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 31 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 32 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 33 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 34 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 35 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 36 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 37 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 38 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 39 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 40 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 41 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 42 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 43 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 44 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 45 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 46 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 47 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 48 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 49 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 50 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 51 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 52 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 53 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 54 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 55 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 56 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 57 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 58 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 59 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 60 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 61 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 62 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 63 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 64 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 65 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 66 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 67 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 68 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 69 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 70 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 71 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 72 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 73 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 74 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 75 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 76 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 77 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 78 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 79 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 80 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 81 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 82 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 83 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 84 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 85 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 86 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 87 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 88 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 89 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 90 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 91 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 92 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 93 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 94 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 95 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 96 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 97 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 98 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 99 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 100 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 101 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 102 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 103 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 104 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 105 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 106 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 107 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 108 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 109 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 110 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 111 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 112 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 113 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 114 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 115 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 116 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 117 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 118 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 119 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 120 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 121 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 122 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 123 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 124 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 125 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 126 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 127 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 128 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 129 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 130 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 131 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 132 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 133 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 134 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 135 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 136 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 137 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 138 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 139 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 140 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 141 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 142 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 143 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 144 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 145 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 146 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 147 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 148 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 149 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 150 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 151 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 152 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 153 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 154 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 155 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 156 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 157 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 158 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 159 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 160 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 161 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 162 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 163 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 164 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 165 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 166 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 167 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 168 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 169 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 170 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 171 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 172 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 173 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 174 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 175 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 176 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 177 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 178 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 179 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 180 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 181 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 182 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 183 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 184 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 185 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  370
+../../MiddleLayer/src/ftdi_mid.c:1002:Mid_SendReceiveCmdFromMPSSE():INFRA_FREE 0x93520a8
+../../MiddleLayer/src/ftdi_mid.c:1004:Mid_SendReceiveCmdFromMPSSE():Exiting function status=0
+../../MiddleLayer/src/ftdi_mid.c:928:Mid_SendReceiveCmdFromMPSSE():Entering function
+../../MiddleLayer/src/ftdi_mid.c:929:Mid_SendReceiveCmdFromMPSSE():INFRA_MALLOC 4096bytes
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 0 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 1 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 2 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 3 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 4 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 5 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 6 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 7 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 8 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 9 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 10 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 11 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 12 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 13 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 14 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 15 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 16 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 17 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 18 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 19 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 20 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 21 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 22 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 23 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 24 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 25 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 26 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 27 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 28 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 29 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 30 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 31 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 32 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 33 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 34 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 35 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 36 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 37 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 38 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 39 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 40 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 41 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 42 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 43 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 44 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 45 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 46 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 47 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 48 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 49 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 50 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 51 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 52 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 53 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 54 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 55 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 56 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 57 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 58 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 59 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 60 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 61 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 62 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 63 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 64 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 65 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 66 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 67 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 68 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 69 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 70 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 71 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 72 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 73 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 74 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 75 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 76 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 77 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 78 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 79 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 80 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 81 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 82 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 83 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 84 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 85 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 86 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 87 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 88 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 89 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 90 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 91 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 92 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 93 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 94 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 95 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 96 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 97 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 98 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 99 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 100 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 101 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 102 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 103 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 104 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 105 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 106 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 107 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 108 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 109 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 110 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 111 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 112 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 113 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 114 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 115 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 116 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 117 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 118 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 119 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 120 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 121 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 122 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 123 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 124 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 125 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 126 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 127 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 128 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 129 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 130 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 131 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 132 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 133 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 134 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 135 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 136 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 137 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 138 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 139 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 140 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 141 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 142 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 143 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 144 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 145 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 146 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 147 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 148 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 149 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 150 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 151 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 152 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 153 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 154 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 155 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 156 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 157 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 158 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 159 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 160 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 161 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 162 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 163 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 164 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 165 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 166 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 167 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 168 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 169 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 170 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 171 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 172 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 173 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 174 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 175 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 176 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 177 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 178 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 179 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 180 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 181 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 182 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 183 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 184 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 185 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 186 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 187 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 188 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 189 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 190 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 191 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 192 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 193 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 194 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 195 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 196 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 197 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 198 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 199 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 200 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 201 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 202 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 203 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 204 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 205 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 206 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 207 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 208 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 209 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 210 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 211 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 212 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 213 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  0
+../../MiddleLayer/src/ftdi_mid.c:946:Mid_SendReceiveCmdFromMPSSE():In Loop Mid_SendReceiveCmdFromMPSSE loopCounter = 214 
+../../MiddleLayer/src/ftdi_mid.c:957:Mid_SendReceiveCmdFromMPSSE():bytesInInputBuf size =  4
+../../MiddleLayer/src/ftdi_mid.c:1002:Mid_SendReceiveCmdFromMPSSE():INFRA_FREE 0x93520a8
+../../MiddleLayer/src/ftdi_mid.c:1004:Mid_SendReceiveCmdFromMPSSE():Exiting function status=0
+../../MiddleLayer/src/ftdi_mid.c:895:Mid_SyncMPSSE():Exiting function status=0
+../../MiddleLayer/src/ftdi_mid.c:1116:Mid_SetClock():Entering function
+../../MiddleLayer/src/ftdi_mid.c:1133:Mid_SetClock():handle=0x9350ff0 value=0xbf970f18 ENABLE_CLOCK_DIVIDE
+../../MiddleLayer/src/ftdi_mid.c:1157:Mid_SetClock():valueL=0x9 valueH=0x0 
+../../MiddleLayer/src/ftdi_mid.c:1160:Mid_SetClock():Exiting function status=0
+../../MiddleLayer/src/ftdi_mid.c:402:FT_InitChannel():Mid_SetClock Status Ok return 0x0
+../../MiddleLayer/src/ftdi_mid.c:1181:Mid_SetDeviceLoopbackState():Entering function
+../../MiddleLayer/src/ftdi_mid.c:1191:Mid_SetDeviceLoopbackState():Exiting function status=0
+../../MiddleLayer/src/ftdi_mid.c:408:FT_InitChannel():Mid_SetDeviceLoopbackState Status Ok return 0x0
+../../MiddleLayer/src/ftdi_mid.c:1213:Mid_EmptyDeviceInputBuff():Entering function
+../../MiddleLayer/src/ftdi_mid.c:1214:Mid_EmptyDeviceInputBuff():INFRA_MALLOC 4096bytes
+../../MiddleLayer/src/ftdi_mid.c:1243:Mid_EmptyDeviceInputBuff():INFRA_FREE 0x93520a8
+../../MiddleLayer/src/ftdi_mid.c:1245:Mid_EmptyDeviceInputBuff():Exiting function status=0
+../../MiddleLayer/src/ftdi_mid.c:412:FT_InitChannel():Mid_EmptyDeviceInputBuff Status Ok return 0x0
+../../MiddleLayer/src/ftdi_mid.c:1026:Mid_SetGPIOLow():Entering function
+../../MiddleLayer/src/ftdi_mid.c:1037:Mid_SetGPIOLow():Exiting function status=0
+../../MiddleLayer/src/ftdi_mid.c:459:FT_InitChannel():Exiting function status=0
+../../TopLayer/I2C/src/ftdi_i2c.c:263:I2C_InitChannel():Enabling 3 phase clocking
+../../MiddleLayer/src/ftdi_mid.c:580:FT_Channel_Write():Entering function
+FT_Channel_Write called with noOfBytes=1
+ 0x8c
+../../MiddleLayer/src/ftdi_mid.c:627:FT_Channel_Write():Exiting function status=0
+../../TopLayer/I2C/src/ftdi_i2c.c:1606:I2C_SaveChannelConfig():Entering function
+../../TopLayer/I2C/src/ftdi_i2c.c:1609:I2C_SaveChannelConfig():Exiting function status=0
+../../TopLayer/I2C/src/ftdi_i2c.c:275:I2C_InitChannel():Exiting function status=0
+ read address 00
+../../TopLayer/I2C/src/ftdi_i2c.c:438:I2C_DeviceWrite():Entering function
+../../TopLayer/I2C/src/ftdi_i2c.c:451:I2C_DeviceWrite():handle=0x9350ff0 deviceAddress=0x51 sizeToTransfer=1 options= 	0x11
+../../MiddleLayer/src/ftdi_mid.c:714:Mid_PurgeDevice():Entering function
+../../MiddleLayer/src/ftdi_mid.c:716:Mid_PurgeDevice():Exiting function status=0
+../../TopLayer/I2C/src/ftdi_i2c.c:1035:I2C_FastWrite():Entering function
+../../TopLayer/I2C/src/ftdi_i2c.c:1063:I2C_FastWrite():INFRA_MALLOC 126bytes
+../../TopLayer/I2C/src/ftdi_i2c.c:1072:I2C_FastWrite():adding START condition
+../../TopLayer/I2C/src/ftdi_i2c.c:1099:I2C_FastWrite():7bit I2C address plus direction bit = 0xa2
+../../TopLayer/I2C/src/ftdi_i2c.c:1157:I2C_FastWrite():i=115 bitsToTransfer=8 bitsInThisTransfer=8
+../../TopLayer/I2C/src/ftdi_i2c.c:1191:I2C_FastWrite():i=115 bitsToTransfer=8 bitsInThisTransfer=8
+../../MiddleLayer/src/ftdi_mid.c:580:FT_Channel_Write():Entering function
+FT_Channel_Write called with noOfBytes=115
+ 0x80 0x3 0x13 0x80 0x3 0x13 0x80 0x3 0x13 0x80 0x3 0x13 0x80 0x3 0x13 0x80 0x3 0x13 0x80 0x3 0x13 0x80 0x3 0x13 0x80 0x3 0x13 0x80 0x3 0x13 0x80 0x1 0x13 0x80 0x1 0x13 0x80 0x1 0x13 0x80 0x1 0x13 0x80 0x1 0x13 0x80 0x1 0x13 0x80 0x1 0x13 0x80 0x1 0x13 0x80 0x1 0x13 0x80 0x1 0x13 0x80 0x1 0x13 0x80 0x1 0x13 0x80 0x1 0x13 0x80 0x1 0x13 0x80 0x1 0x13 0x80 0x1 0x13 0x80 0x1 0x13 0x80 0x1 0x13 0x80 0x1 0x13 0x80 0x1 0x13 0x80 0x0 0x13 0x80 0x2 0x13 0x13 0x7 0xa2 0x80 0x0 0x11 0x22 0x0 0x80 0x2 0x13 0x13 0x7 0x0 0x80 0x0 0x11 0x22 0x0
+../../MiddleLayer/src/ftdi_mid.c:627:FT_Channel_Write():Exiting function status=0
+../../MiddleLayer/src/ftdi_mid.c:508:FT_Channel_Read():Entering function
+FT_Channel_Read called with noOfBytes=1
+ 0x1
+../../MiddleLayer/src/ftdi_mid.c:555:FT_Channel_Read():Exiting function status=0
+../../TopLayer/I2C/src/ftdi_i2c.c:1203:I2C_FastWrite():addAck = 1 bitsToRead=2 bytesToRead=0
+../../TopLayer/I2C/src/ftdi_i2c.c:1209:I2C_FastWrite():INFRA_MALLOC 2bytes
+../../MiddleLayer/src/ftdi_mid.c:508:FT_Channel_Read():Entering function
+FT_Channel_Read called with noOfBytes=1
+ 0x3
+../../MiddleLayer/src/ftdi_mid.c:555:FT_Channel_Read():Exiting function status=0
+../../TopLayer/I2C/src/ftdi_i2c.c:1219:I2C_FastWrite():INFRA_FREE 0x935bbb8
+../../TopLayer/I2C/src/ftdi_i2c.c:1223:I2C_FastWrite():INFRA_FREE 0x93520a8
+../../TopLayer/I2C/src/ftdi_i2c.c:1224:I2C_FastWrite():Exiting function status=0
+../../TopLayer/I2C/src/ftdi_i2c.c:533:I2C_DeviceWrite():Exiting function status=0
+ bytesTransfered 1 
+buffer  0  00
+../../TopLayer/I2C/src/ftdi_i2c.c:331:I2C_DeviceRead():Entering function
+ lsd is in i2c_deviceread
+../../TopLayer/I2C/src/ftdi_i2c.c:1280:I2C_FastRead():Entering function
+../../TopLayer/I2C/src/ftdi_i2c.c:1304:I2C_FastRead():INFRA_MALLOC 221bytes
+../../TopLayer/I2C/src/ftdi_i2c.c:1339:I2C_FastRead():7bit I2C address plus direction bit = 0xa3
+../../TopLayer/I2C/src/ftdi_i2c.c:1519:I2C_FastRead():i=219 bitsToTransfer=16 bitsInThisTransfer=8
+../../MiddleLayer/src/ftdi_mid.c:580:FT_Channel_Write():Entering function
+FT_Channel_Write called with noOfBytes=219
+ 0x80 0x3 0x13 0x80 0x3 0x13 0x80 0x3 0x13 0x80 0x3 0x13 0x80 0x3 0x13 0x80 0x3 0x13 0x80 0x3 0x13 0x80 0x3 0x13 0x80 0x3 0x13 0x80 0x3 0x13 0x80 0x1 0x13 0x80 0x1 0x13 0x80 0x1 0x13 0x80 0x1 0x13 0x80 0x1 0x13 0x80 0x1 0x13 0x80 0x1 0x13 0x80 0x1 0x13 0x80 0x1 0x13 0x80 0x1 0x13 0x80 0x1 0x13 0x80 0x1 0x13 0x80 0x1 0x13 0x80 0x1 0x13 0x80 0x1 0x13 0x80 0x1 0x13 0x80 0x1 0x13 0x80 0x1 0x13 0x80 0x1 0x13 0x80 0x1 0x13 0x80 0x0 0x13 0x80 0x2 0x13 0x13 0x7 0xa3 0x80 0x0 0x11 0x22 0x0 0x80 0x0 0x11 0x22 0x7 0x80 0x0 0x11 0x13 0x0 0x0 0x80 0x0 0x11 0x22 0x7 0x80 0x0 0x11 0x13 0x0 0x0 0x80 0x0 0x13 0x80 0x0 0x13 0x80 0x0 0x13 0x80 0x0 0x13 0x80 0x0 0x13 0x80 0x0 0x13 0x80 0x0 0x13 0x80 0x0 0x13 0x80 0x0 0x13 0x80 0x0 0x13 0x80 0x1 0x13 0x80 0x1 0x13 0x80 0x1 0x13 0x80 0x1 0x13 0x80 0x1 0x13 0x80 0x1 0x13 0x80 0x1 0x13 0x80 0x1 0x13 0x80 0x1 0x13 0x80 0x1 0x13 0x80 0x3 0x13 0x80 0x3 0x13 0x80 0x3 0x13 0x80 0x3 0x13 0x80 0x3 0x13 0x80 0x3 0x13 0x80 0x3 0x13 0x80 0x3 0x13 0x80 0x3 0x13 0x80 0x3 0x13 0x80 0x3 0x10
+../../MiddleLayer/src/ftdi_mid.c:627:FT_Channel_Write():Exiting function status=0
+../../MiddleLayer/src/ftdi_mid.c:508:FT_Channel_Read():Entering function
+FT_Channel_Read called with noOfBytes=1
+ 0x7
+../../MiddleLayer/src/ftdi_mid.c:555:FT_Channel_Read():Exiting function status=0
+../../MiddleLayer/src/ftdi_mid.c:508:FT_Channel_Read():Entering function
+FT_Channel_Read called with noOfBytes=2
+ 0xff 0xff
+../../MiddleLayer/src/ftdi_mid.c:555:FT_Channel_Read():Exiting function status=0
+../../TopLayer/I2C/src/ftdi_i2c.c:1537:I2C_FastRead():INFRA_FREE 0x93520a8
+../../TopLayer/I2C/src/ftdi_i2c.c:1538:I2C_FastRead():Exiting function status=0
+../../TopLayer/I2C/src/ftdi_i2c.c:407:I2C_DeviceRead():Exiting function status=0
+ bytesTransfered 16 
+ bytesTransfered 16 
+buffer  0  ff
+buffer  1  ff
+buffer  2  aa
+buffer  3  aa
+buffer  4  aa
+buffer  5  aa
+buffer  6  aa
+buffer  7  aa
+buffer  8  aa
+buffer  9  aa
+buffer  10  aa
+buffer  11  aa
+buffer  12  aa
+buffer  13  aa
+buffer  14  aa
+buffer  15  aa
+ data ffffffff 
+../../TopLayer/I2C/src/ftdi_i2c.c:294:I2C_CloseChannel():Entering function
+../../MiddleLayer/src/ftdi_mid.c:480:FT_CloseChannel():Entering function
+../../MiddleLayer/src/ftdi_mid.c:482:FT_CloseChannel():Exiting function status=0
+../../TopLayer/I2C/src/ftdi_i2c.c:300:I2C_CloseChannel():Exiting function status=0
+../../Infra/src/ftdi_infra.c:456:my_exit():Entering function
+../../Infra/src/ftdi_infra.c:335:Cleanup_libMPSSE():Entering function
+../../Infra/src/ftdi_infra.c:358:Cleanup_libMPSSE():Exiting function status=0
+../../Infra/src/ftdi_infra.c:458:my_exit():Exiting function status=0
