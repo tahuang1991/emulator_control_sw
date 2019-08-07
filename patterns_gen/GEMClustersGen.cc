@@ -150,9 +150,9 @@ int main(int argc, char * argv[]) {
        
        
     }
+    std::cout <<" icluster "<< icluster << " remain n "<< remainbits <<" lastbx "<< lastbx <<std::endl; 
     if (icluster>0 and icluster<4){ 
         x = std::pow(2, 8-remainbits) -1;
-        std::cout <<" icluster "<< icluster << " remain n "<< remainbits <<" lastbx "<< lastbx << " x "<< x<<std::endl; 
         (*oss) << (char(remaininfo << (8-remainbits) | x));
     }
     writenbytes(oss, 7-icluster*DataBits/8);

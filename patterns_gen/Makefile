@@ -27,15 +27,17 @@ YuriyGen_SRC = Yuriy_CLCT_PatternGen.cc CSCConstants.h
 YuriyGen_OBJ = Yuriy_CLCT_PatternGen.o
 
 #set pattern generation
-#GEM_EXE = GEMpattern_generation.exe
-#GEM_SRC = GEMPatternGen.cc CSCConstants.h
-#GEM_OBJ = GEMpattern_generation.o
-GEM_EXE = GEMClusters_generation.exe
-GEM_SRC = GEMClustersGen.cc CSCConstants.h
-GEM_OBJ = GEMClusters_generation.o
+GEM_EXE = GEMpattern_generation.exe
+GEM_SRC = GEMPatternGen.cc CSCConstants.h
+GEM_OBJ = GEMpattern_generation.o
+
+#set
+GEMCluster_EXE = GEMClusters_generation.exe
+GEMCluster_SRC = GEMClustersGen.cc CSCConstants.h
+GEMCluseter_OBJ = GEMClusters_generation.o
 
 # compilation for runs
-all: convert generate generatehits GEMGen YuriyGen
+all: convert generate generatehits GEMGen GEMClusterGen YuriyGen
  convert:
 	$(CC) -g $(OPT) $(Convert_SRC) -o $(Convert_EXE) $(LDFLAGS)
 	/bin/rm -rf *.o
@@ -51,10 +53,13 @@ all: convert generate generatehits GEMGen YuriyGen
  GEMGen:
 	$(CC) -g $(OPT) $(GEM_SRC) -o $(GEM_EXE) $(LDFLAGS)
 	/bin/rm -rf *.o
+ GEMClusterGen:
+	$(CC) -g $(OPT) $(GEMCluster_SRC) -o $(GEMCluster_EXE) $(LDFLAGS)
+	/bin/rm -rf *.o
  YuriyGen:
 	$(CC) -g $(OPT) $(YuriyGen_SRC) -o $(YuriyGen_EXE) $(LDFLAGS)
 	/bin/rm -rf *.o
 
 
 clean:
-	rm -rf *.o $(Convert_EXE) $(Gen_EXE) $(GEM_EXE) $(Genhits_EXE)
+	rm -rf *.o $(Convert_EXE) $(Gen_EXE) $(GEM_EXE) $(Genhits_EXE) 
