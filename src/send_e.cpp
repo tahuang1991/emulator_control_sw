@@ -14,7 +14,8 @@ int main(int argc,char *argv[])
         n = atoi(argv[1]);
     }
 
-	eth_open("/dev/schar3");
+	//eth_open("/dev/schar3");
+	eth_open_device();
 	eth_reset();
 
 	int e = write_command(0xe,n);

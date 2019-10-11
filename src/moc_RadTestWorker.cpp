@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'RadTestWorker.h'
 **
-** Created: Fri Oct 11 13:46:15 2019
+** Created: Fri Oct 11 14:27:39 2019
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.6.2)
 **
 ** WARNING! All changes made in this file will be lost!

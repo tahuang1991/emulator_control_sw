@@ -71,7 +71,8 @@ void RadTestWorker::runTest(){
   }
 
   //cout<<"test "<<currenttest<<"..."<<endl;
-  eth_open("/dev/schar3");
+  //eth_open("/dev/schar3");
+  eth_open_device();
   
 
   if(currenttest==1){

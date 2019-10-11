@@ -18,7 +18,8 @@ int main(int argc,char *argv[])
 		else if(argv[1][0] == 'c')
 			mode - 0xc;
 	}
-	eth_open("/dev/schar3");
+	//eth_open("/dev/schar3");
+	eth_open_device();
 	eth_reset();
 
 	int e = write_command(0xd);
