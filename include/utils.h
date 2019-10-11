@@ -21,6 +21,7 @@
 /* Hard limit of pattern size */
 #define MAX_PAT_SIZE 1024*1024 // 1 GB
 
+static const int Nfibers = 12;
 
 int file_size(FILE *fp);
   /* Returns the size of a file */

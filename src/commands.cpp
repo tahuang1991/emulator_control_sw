@@ -219,7 +219,7 @@ int retrieve_Snap12ErrorCounts(unsigned int* counters){
     std::cerr<<"ERROR: sizeof(int)="<<sizeof(int)<<"  This code assume sizeof(int)==4!"<<std::endl;
     return -3;
   }
-  memcpy(counters, (const void*)&pkt[2], 8*4);  // fill error counts: 8x 4-byte counters
+  memcpy(counters, (const void*)&pkt[2], Nfibers*4);  // fill error counts: 8x 4-byte counters
   // Note: this will thrash memory if the counters array does not have 24 places!
   // It is also possible that the bytes in the array are reversed from how they should be in the int, which will take more work to unpack
   

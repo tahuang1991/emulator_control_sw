@@ -22,7 +22,7 @@ RadTestWorker::RadTestWorker(QObject *parent)
     counter[i][0]=0;
     counter[i][1]=0;
   }
-  for(int i=0; i<8; i++){
+  for(int i=0; i<Nfibers; i++){
     snap12_counts[i]=0;
     snap12_counts_last[i]=0;
   }
@@ -81,7 +81,7 @@ void RadTestWorker::runTest(){
       reinit[currenttest]=0;
       retrieve_Snap12ErrorCounts(snap12_counts_last); // get initial counters after (re)start 
       *radlog<<time_string()<<" ==> (Re)Initializing snap12 counters: "<<endl;
-      for(int i=0; i<8; i++)  *radlog<<"    --> snap12_counts_last["<<i<<"] =  "<<snap12_counts_last[i]<<endl;
+      for(int i=0; i<Nfibers; i++)  *radlog<<"    --> snap12_counts_last["<<i<<"] =  "<<snap12_counts_last[i]<<endl;
     }
     
     cout<<"Test Snap12 Error Counts"<<endl;
@@ -97,14 +97,14 @@ void RadTestWorker::runTest(){
       
       // check if counters changed
       change=0;
-      for(int i=0; i<8; i++) change += snap12_counts[i] - snap12_counts_last[i];
+      for(int i=0; i<Nfibers; i++) change += snap12_counts[i] - snap12_counts_last[i];
       
       if(change){ // they did change...
 	
 	// dump counters to the log file
 	*radlog<<time_string()<<" ***ERROR*** (F1e2) Change in snap12 error counters (ntry="<<ntry<<"): "<<endl;
-	for(int i=0; i<8; i++)  *radlog<<"    --> snap12_counts["<<i<<"] =  "<<snap12_counts[i]<<endl;
-	memcpy(snap12_counts_last, snap12_counts, 8*sizeof(int)); // update last counts
+	for(int i=0; i<Nfibers; i++)  *radlog<<"    --> snap12_counts["<<i<<"] =  "<<snap12_counts[i]<<endl;
+	memcpy(snap12_counts_last, snap12_counts, Nfibers*sizeof(int)); // update last counts
 
 	if(SEUcounted==0){ // only count as 1 SEU/burst
 	  SEUcounted=1;

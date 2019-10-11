@@ -52,8 +52,9 @@ class RadTestWorker : public QObject
   bool bump;
 
   // buffers for tests
-  unsigned int snap12_counts[8];
-  unsigned int snap12_counts_last[8];
+  // Nfibers is defined in utils.h
+  unsigned int snap12_counts[Nfibers];
+  unsigned int snap12_counts_last[Nfibers];
   unsigned int voting_counts[12];
   unsigned int voting_counts_last[12];
   unsigned short trans_counts[24];
