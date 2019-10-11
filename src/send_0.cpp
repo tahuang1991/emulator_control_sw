@@ -9,7 +9,7 @@ using namespace std;
 
 int main(int argc,char *argv[])
 {
-	eth_open("/dev/schar4");
+	eth_open("/dev/schar3");
 	eth_reset();
 
 	int e = write_command(0);

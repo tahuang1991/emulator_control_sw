@@ -26,7 +26,7 @@ int main(int argc,char *argv[])
 	char block[CSCConstants::NUM_DCFEBS][RAMPAGE_SIZE];
     std::fstream text_file(argv[1], std::ios_base::in);
 	// open device
-    eth_open("/dev/schar4");
+    eth_open("/dev/schar3");
     eth_reset();
     int numfebs = convert(text_file, block);
     if(numfebs <= 0){

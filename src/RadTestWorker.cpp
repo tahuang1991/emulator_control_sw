@@ -71,7 +71,7 @@ void RadTestWorker::runTest(){
   }
 
   //cout<<"test "<<currenttest<<"..."<<endl;
-  eth_open("/dev/schar4");
+  eth_open("/dev/schar3");
   
 
   if(currenttest==1){

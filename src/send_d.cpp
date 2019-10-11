@@ -18,7 +18,7 @@ int main(int argc,char *argv[])
 		else if(argv[1][0] == 'c')
 			mode - 0xc;
 	}
-	eth_open("/dev/schar4");
+	eth_open("/dev/schar3");
 	eth_reset();
 
 	int e = write_command(0xd);

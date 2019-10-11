@@ -13,7 +13,7 @@ int main(int argc,char *argv[])
 	cout << "pageid = " << pageid << endl;
 
 	// open device
-	eth_open("/dev/schar4");
+	eth_open("/dev/schar3");
 	eth_reset();
 
 	int q = write_command(3, pageid);
