@@ -181,6 +181,8 @@ int retrieve_VotingErrorCounts(unsigned int* counters){
   memcpy(counters, (const void*)&pkt[2], 12*4);  // fill error counts: 12x 4-byte counters
   // Note: this will thrash memory if the counters array does not have 12 places!
   // It is also possible that the bytes in the array are reversed from how they should be in the int, which will take more work to unpack
+  for (int i=0; i<12; i++)
+  if (DEBUG>0) std::cout <<" retrieve_VotingErrorCounts counter "<< i <<" "<< counters[i] << std::endl;
 
   if(DEBUG>10) std::cout<<"DEBUG[commands.cpp]  retrieve_VotingErrorCounts return 0"<<std::endl;
   return 0;
@@ -219,9 +221,20 @@ int retrieve_Snap12ErrorCounts(unsigned int* counters){
     std::cerr<<"ERROR: sizeof(int)="<<sizeof(int)<<"  This code assume sizeof(int)==4!"<<std::endl;
     return -3;
   }
-  memcpy(counters, (const void*)&pkt[2], Nfibers*4);  // fill error counts: 8x 4-byte counters
+  int nbyte_per_counter = 4;
+  if (Nfibers > 12) {
+	  nbyte_per_counter = 2;
+          unsigned short counters_short [Nfibers];
+	  memcpy(counters_short, (const void*)&pkt[2], Nfibers*nbyte_per_counter);  // fill error counts: 8x 4-byte counters
+	  for (int i=0; i<Nfibers; i++) counters[i] = counters_short[i];
+  }
+  else 
+	  memcpy(counters, (const void*)&pkt[2], Nfibers*nbyte_per_counter);  // fill error counts: 8x 4-byte counters
   // Note: this will thrash memory if the counters array does not have 24 places!
   // It is also possible that the bytes in the array are reversed from how they should be in the int, which will take more work to unpack
+  //for (int i=0; i<Nfibers; i++)
+  //if (DEBUG>0) std::cout <<" retrieve_Snap12ErrorCounts counter "<< i <<" "<< counters[i]<<" size of counters[i] "<< sizeof(counters[i]) << std::endl;
+  
   
   if(DEBUG>10) std::cout<<"DEBUG[commands.cpp]  retrieve_Snap12ErrorCounts return 0"<<std::endl;
   return 0;  

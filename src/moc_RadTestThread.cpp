@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'RadTestThread.h'
 **
-** Created: Fri Oct 11 14:27:39 2019
+** Created: Mon Oct 14 14:03:28 2019
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.6.2)
 **
 ** WARNING! All changes made in this file will be lost!

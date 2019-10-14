@@ -70,10 +70,11 @@ void RadTestWorker::runTest(){
     newstart=0;
   }
 
-  //cout<<"test "<<currenttest<<"..."<<endl;
+  cout<<"test "<<currenttest<<"..."<<endl;
   //eth_open("/dev/schar3");
   eth_open_device();
   
+  bool counter_change_flag = false;
 
   if(currenttest==1){
     ////////////////// Snap12 Test ///////////////////
@@ -83,6 +84,7 @@ void RadTestWorker::runTest(){
       retrieve_Snap12ErrorCounts(snap12_counts_last); // get initial counters after (re)start 
       *radlog<<time_string()<<" ==> (Re)Initializing snap12 counters: "<<endl;
       for(int i=0; i<Nfibers; i++)  *radlog<<"    --> snap12_counts_last["<<i<<"] =  "<<snap12_counts_last[i]<<endl;
+      
     }
     
     cout<<"Test Snap12 Error Counts"<<endl;
@@ -97,13 +99,17 @@ void RadTestWorker::runTest(){
       }
       
       // check if counters changed
+      counter_change_flag = false;
       change=0;
-      for(int i=0; i<Nfibers; i++) change += snap12_counts[i] - snap12_counts_last[i];
+      for(int i=0; i<Nfibers; i++) {
+ 	change += snap12_counts[i] - snap12_counts_last[i];
+        if (snap12_counts[i] != snap12_counts_last[i])  counter_change_flag = true;
+      }
       
-      if(change){ // they did change...
+      if(counter_change_flag){ // they did change...
 	
 	// dump counters to the log file
-	*radlog<<time_string()<<" ***ERROR*** (F1e2) Change in snap12 error counters (ntry="<<ntry<<"): "<<endl;
+	*radlog<<time_string()<<" ***ERROR*** (F1e2) Change in snap12 error counters (ntry="<<ntry<<"): "<<" SEUcounted "<< SEUcounted <<" err counter[1][0] " << counter[1][0] <<endl;
 	for(int i=0; i<Nfibers; i++)  *radlog<<"    --> snap12_counts["<<i<<"] =  "<<snap12_counts[i]<<endl;
 	memcpy(snap12_counts_last, snap12_counts, Nfibers*sizeof(int)); // update last counts
 
@@ -153,10 +159,14 @@ void RadTestWorker::runTest(){
       }
       
       // check if counters changed
+      counter_change_flag = false;
       change=0;
-      for(int i=0; i<24; i++) change += trans_counts[i] - trans_counts_last[i];
+      for(int i=0; i<24; i++) {
+        change += trans_counts[i] - trans_counts_last[i];
+        if (trans_counts[i] != trans_counts_last[i])  counter_change_flag = true;
+      }
 
-      if(change){ // they did change...
+      if(counter_change_flag){ // they did change...
 
 	*radlog<<time_string()<<" ***ERROR*** (F2e2) Change in translator error counters (ntry="<<ntry<<"): "<<endl;
 	for(int i=0; i<24; i++) *radlog<<"    --> trans_counts["<<i<<"] =  "<<trans_counts[i]<<endl;
@@ -453,9 +463,14 @@ void RadTestWorker::runTest(){
       //   counters 9-11:  Not SEUs.  Triple voting cycles counters.  Log when they do *not* change.
 
       // check pre-mitigation counters
+      counter_change_flag = false;
       change=0;
-      for(int i=0; i<=5; i++) change += voting_counts[i] - voting_counts_last[i];
-      if(change){ // they did change...
+      for(int i=0; i<=5; i++) {
+        change += voting_counts[i] - voting_counts_last[i];
+        if (voting_counts[i] != voting_counts_last[i])  counter_change_flag = true;
+      }
+
+      if(counter_change_flag){ // they did change...
 	// dump counters to the log file
 	*radlog<<time_string()<<" ***WARNING*** Change in pre-voting error counters (ntry="<<ntry<<"): "<<endl;
 	for(int i=0; i<=5; i++)  *radlog<<"    --> voting_counts["<<i<<"] =  "<<voting_counts[i]<<endl;
@@ -463,9 +478,14 @@ void RadTestWorker::runTest(){
       }	
 
       // check triple vote cycles counters
+      counter_change_flag = false;
       change=0;
-      for(int i=9; i<=11; i++) change += voting_counts[i] - voting_counts_last[i];
-      if(change>0){  // voting cycle counters increased, as they should
+      for(int i=9; i<=11; i++) {
+	change += voting_counts[i] - voting_counts_last[i];
+        if (voting_counts[i] != voting_counts_last[i])  counter_change_flag = true;
+      }
+
+      if(counter_change_flag){  // voting cycle counters increased, as they should
 	if(DEBUG>10) cout<<"DEBUG[RadTestWorker.cpp] Voting cycle counters increased (good)"<<endl;
 	memcpy((void*)&voting_counts_last[9], (const void*)&voting_counts[9], 3*sizeof(int)); // update last counts
       }else{ // they did *not* increase, print warning...
@@ -481,9 +501,14 @@ void RadTestWorker::runTest(){
       
       // check if triple voting counters changed, which will be an SEU 
       // Do this check last so that the voting_counters_last will be updated for the other counters, otherwise they will not be udpated if there is an SEU
+      counter_change_flag = false;
       change=0;
-      for(int i=6; i<=8; i++) change += voting_counts[i] - voting_counts_last[i];
-      if(change){ // they did change...
+      for(int i=6; i<=8; i++) {
+        change += voting_counts[i] - voting_counts_last[i];
+        if (voting_counts[i] != voting_counts_last[i])  counter_change_flag = true;
+       }
+
+      if(counter_change_flag){ // they did change...
 	// log message that this was an SEU (ERROR)
 	*radlog<<time_string()<<" ***ERROR*** (F5e2) Change in voting error counters (ntry="<<ntry<<"): "<<endl;
 	for(int i=6; i<=8; i++)  *radlog<<"    --> voting_counts["<<i<<"] =  "<<voting_counts[i]<<endl;
