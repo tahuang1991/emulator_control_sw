@@ -4,7 +4,8 @@
 #include <QtGui>
 #include <QWidget>
 #include <QApplication>
-#include <QtGui>
+//#include <QtGui>  //for qt4
+#include <QtWidgets>
 #include <math.h>
 #include <iostream>
 #include <fstream>

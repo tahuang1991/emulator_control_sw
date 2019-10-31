@@ -10,16 +10,17 @@ QTDIR        = /usr
 #QTDIR        = /usr/local/Trolltech/Qt-4.7.2
 #QTDIR        = /usr
 
-MOC          = /usr/lib64/qt4/bin/moc
+#MOC          = /usr/lib64/qt5/bin/moc
+MOC           = /usr/lib64/qt5/bin/moc
 #MOC          = /usr/bin/moc-qt4
 
 CXX		= g++
-DEFINES		= -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB
-CXXFLAGS	= -Wall -pipe -O1 -W -D_REENTRANT $(DEFINES)
-INCPATH		= -I../include -I$(QTDIR)/mkspecs/default -I$(QTDIR)/include/QtCore -I$(QTDIR)/include/QtGui -I$(QTDIR)/include
+DEFINES		= -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB  
+CXXFLAGS	= -Wall -pipe -O1 -W -D_REENTRANT $(DEFINES) -std=c++11 -fPIC 
+INCPATH		= -I../include -I$(QTDIR)/mkspecs/default -I$(QTDIR)/include/qt5/QtCore -I$(QTDIR)/include/qt5/QtGui -I$(QTDIR)/include/qt5 -I$(QTDIR)/include/qt5/QtWidgets/ -I$(QTDIR)/include/qt5/QtConcurrent/
 LINK		= g++
 LFLAGS		= -Wall -Wl,-O1 -Wl,-rpath,$(QTDIR)/lib
-LIBS		= -L$(QTDIR)/lib -lQtGui -lQtCore -lpthread 
+LIBS		= -L$(QTDIR)/lib -lQt5Gui -lQt5Core -lpthread -lQt5Widgets -lQt5Concurrent
 
 
 
@@ -148,7 +149,7 @@ moc_RadTestWorker.cpp: ../include/RadTestWorker.h
 moc_QProgressIndicator.cpp: ../include/QProgressIndicator.h
 	$(MOC) $(DEFINES) $(INCPATH) $< -o $@
 
-####### Implicit Compile Rules
+###### Implicit Compile Rules
 
 %.o: %.cpp ../include/%.h $(ETHHEADERS)
 	$(CXX) $(CXXFLAGS) $(INCPATH) -c -o $@ $*.cpp
