@@ -6,3 +6,5 @@
 *.exe
 bin/*
 src/src_back/*
+src/*.exe
+src/*.o
