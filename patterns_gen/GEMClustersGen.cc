@@ -1,4 +1,14 @@
 
+//  main file to generate GEM cluster pattern file from txt file 
+//  txt file template:
+//  ============
+//  prefix:Simpletest
+//  bx Pad etapartition size
+//  1  10  4     4
+//  ===============
+//     2019, Tao Huang
+
+
 #include "CSCConstants.h"
 //#include <random>
 #include <cstdlib>
