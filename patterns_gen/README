@@ -1,0 +1,16 @@
+GEMClustersGen.cc  : generate GEM pattern from gem cluster 
+
+GEMPatternGen.cc : generate GEM patterns from gem pads
+
+pattern_convert.cc  : conver yuriy patterns into normal pattern file
+
+PatternGen.cc  : generate pattern from CLCT, all types should work, include type A, B , C, D
+
+PatternGenhits.cc : generate pattern from hits 
+
+
+Yuriy_CLCT_PatternGen.cc: generate pattern from Yuriy format
+
+
+
+

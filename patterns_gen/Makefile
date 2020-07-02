@@ -12,7 +12,7 @@ Convert_SRC = pattern_convert.cc
 Convert_OBJ = pattern_convert.o
 
 #set pattern generation
-Gen_EXE = pattern_generation_tmbc.exe
+Gen_EXE = pattern_generation_tmbb.exe
 Gen_SRC = PatternGen.cc CSCConstants.h
 Gen_OBJ = pattern_generation.o
 

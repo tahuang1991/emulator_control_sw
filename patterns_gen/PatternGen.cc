@@ -77,6 +77,10 @@ template <size_t XS_per_CFEB> int GetOutputXStrip(int cfeb, int input_xstrip, in
       output_xs = Bad_HS;
   }
   
+  if (output_xs == Bad_HS ) std::cout<<"error!! bad hs from GetOutputXHS "<< std::endl;
+
+
+  
   return output_xs;
 }
 
@@ -96,6 +100,7 @@ template <size_t XS_per_CFEB> int GetInputXStrip(int output_xstrip, int tmb_comp
   int region = output_xstrip / XS_per_CFEB;
   int phase = output_xstrip % XS_per_CFEB;
   int input_xs = -1;
+  int Bad_HS = -1;
   if(tmb_compile_type == 0xa) {
     if(region >= Min_CFEB_in_non_me11 && region <= Max_CFEB_in_non_me11)
       input_xs = phase;
@@ -120,6 +125,7 @@ template <size_t XS_per_CFEB> int GetInputXStrip(int output_xstrip, int tmb_comp
       input_xs = phase;
     }
   }
+  if (input_xs == Bad_HS ) std::cout<<"error!! bad hs from GetOutputXHS "<< std::endl;
   return input_xs;
 }
     //
@@ -133,6 +139,7 @@ template <size_t XS_per_CFEB>  int GetInputCFEBByX(int output_xstrip, int tmb_co
   
   int region = output_xstrip / XS_per_CFEB;
   int cfeb = -1;
+  int Bad_cfeb = -1;
   if(tmb_compile_type == 0xa) {
     if(region >= Min_CFEB_in_non_me11 && region <= Max_CFEB_in_non_me11)
       cfeb = region;
@@ -157,6 +164,7 @@ template <size_t XS_per_CFEB>  int GetInputCFEBByX(int output_xstrip, int tmb_co
       cfeb = region;
     }
   }
+  if (cfeb == Bad_cfeb ) std::cout<<"error!! bad cfeb from GetOutputXHS "<< std::endl;
   return cfeb;
 }
     
@@ -180,21 +188,30 @@ bool hits_Generation(int strip, int pattern, int Nhits, unsigned int hits[CSCCon
 
 void  triad_Generation( unsigned int (&triads)[CSCConstants::NUM_DCFEBS][3][CSCConstants::NUM_LAYERS], int strip, int pattern, int Nhits , int tmb_compile_type){
 
+   bool stagger = (tmb_compile_type == 0xa || tmb_compile_type == 0xb);
+   bool reverselayers = (tmb_compile_type == 0xb);
    unsigned int hits[6] = {999, 999, 999, 999, 999, 999};
 //unsigned int triads[CSCConstants::NUM_DCFEBS][3][CSCConstants::NUM_LAYERS] = {0};
    hits_Generation(strip, pattern, Nhits, hits);
    for (int j=0; j < CSCConstants::NUM_LAYERS; j++){
         if (hits[j] == 999) continue;//default is 0
-        int dcfeb = GetInputCFEBByX<32>(hits[j], tmb_compile_type);
-        int localhs = GetInputXStrip<32>(hits[j], tmb_compile_type);
+        int hit_hs = hits[j];
+        int l = j; // layer
+        if (reverselayers) l = CSCConstants::NUM_LAYERS-1-j; // reverse layer for type B
+
+        //if (stagger and l%2==1)  hit_hs = hit_hs+1; // add CSC staggering for type A and type B 
+        if (tmb_compile_type == 0xa  and l%2==1)  hit_hs = hit_hs+1; // add CSC staggering for type A and type B 
+        else if (tmb_compile_type == 0xb and l%2==0) hit_hs = hit_hs+1;
+        int dcfeb = GetInputCFEBByX<32>(hit_hs, tmb_compile_type);
+        int localhs = GetInputXStrip<32>(hit_hs, tmb_compile_type);
         int distrip = localhs/4;
         unsigned int n = 1 << (distrip);
         bool leftstrip = (localhs%4 < 2);//? triad rules for different dcfeb
         bool lefths = ((localhs%4)%2 == 0);
-        triads[dcfeb][0][j] = n;
-        triads[dcfeb][1][j] = leftstrip? 0 : n;
-        triads[dcfeb][2][j] = lefths? 0 : n;
-        std::cout <<" layer " << j <<"  dcfeb " << dcfeb << " hs "<< hits[j] <<"  localhs " << localhs << " distrip " << distrip 
+        triads[dcfeb][0][l] = n;
+        triads[dcfeb][1][l] = leftstrip? 0 : n;
+        triads[dcfeb][2][l] = lefths? 0 : n;
+        std::cout <<" init layer " << j <<" real layer "<<l <<"  dcfeb " << dcfeb << " hs "<< hit_hs <<"  localhs " << localhs << " distrip " << distrip 
             << " 1st " << (std::bitset<8>)n << " 2nd " <<(std::bitset<8>)triads[dcfeb][1][j] << " 3rd " << (std::bitset<8>)triads[dcfeb][2][j] <<std::endl;     
   }
    std::cout << std::endl; 
@@ -286,7 +303,8 @@ int main(int argc, char * argv[]) {
     unsigned int input_pattern = 0;
     unsigned int input_nhits =0;
     unsigned int input_bx =0;
-    unsigned int tmb_compile_type = 0xc;
+    unsigned int tmb_compile_type = 0xb;
+    bool stagger = (tmb_compile_type == 0xa || tmb_compile_type == 0xb);
     std::vector<CLCT> clcts;
     std::fstream text_file(argv[1], std::ios_base::in);
     /*if(argc > 1)

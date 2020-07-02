@@ -190,6 +190,7 @@ bool hits_Generation(int strip, int pattern, int Nhits, unsigned int hits[CSCCon
 
 void  triad_Generation( unsigned int (&triads)[CSCConstants::NUM_DCFEBS][3][CSCConstants::NUM_LAYERS],unsigned int strip, unsigned int layer ,int tmb_compile_type){
 
+   bool reverselayers = (tmb_compile_type == 0xb);
 //unsigned int triads[CSCConstants::NUM_DCFEBS][3][CSCConstants::NUM_LAYERS] = {0};
    for (unsigned int j=0; j < CSCConstants::NUM_LAYERS; j++){
         if (j !=layer-1 ) continue;// layer is counted from 1, while j is from 0
@@ -199,10 +200,12 @@ void  triad_Generation( unsigned int (&triads)[CSCConstants::NUM_DCFEBS][3][CSCC
         unsigned int n = 1 << (distrip);
         bool leftstrip = (localhs%4 < 2);//? triad rules for different dcfeb
         bool lefths = ((localhs%4)%2 == 0);
-        triads[dcfeb][0][j] = n;
-        triads[dcfeb][1][j] = leftstrip? 0 : n;
-        triads[dcfeb][2][j] = lefths? 0 : n;
-        std::cout <<" layer " << j <<"  dcfeb " << dcfeb << " hs "<< strip <<"  localhs " << localhs << " distrip " << distrip 
+        int l = j;
+        if (reverselayers) l = 6-j;
+        triads[dcfeb][0][l] = n;
+        triads[dcfeb][1][l] = leftstrip? 0 : n;
+        triads[dcfeb][2][l] = lefths? 0 : n;
+        std::cout <<"init layer " << j <<" real layer "<< l <<"  dcfeb " << dcfeb << " hs "<< strip <<"  localhs " << localhs << " distrip " << distrip 
             << " 1st " << (std::bitset<8>)n << " 2nd " <<(std::bitset<8>)triads[dcfeb][1][j] << " 3rd " << (std::bitset<8>)triads[dcfeb][2][j] <<std::endl;     
   }
    std::cout << std::endl; 
@@ -369,6 +372,7 @@ int main(int argc, char * argv[]) {
     unsigned int input_layer=0;//layer count from 1 to 6
     unsigned int input_bx =0;
     unsigned int tmb_compile_type = 0xc;
+    bool stagger = (tmb_compile_type == 0xa || tmb_compile_type == 0xb);
     std::vector<Hit> hits;
     if(argc <= 1) std::cout <<"error! false to get input file" << std::endl;
     //std::cout <<" argv1 "<< argv[1] << std::endl;
